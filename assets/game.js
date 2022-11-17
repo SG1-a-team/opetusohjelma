@@ -6,7 +6,7 @@ const selectors = {
     start: document.querySelector('button'),
     win: document.querySelector('.win')
 }
-
+ 
 const state = {
     gameStarted: false,
     flippedCards: 0,
