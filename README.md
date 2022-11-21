@@ -8,4 +8,4 @@ Small and funny quizes for schoolers<br><br>
 
 added small quiz,memory and hagnman game example where to start to make the games
 
-plop
+tee kuvavisa
