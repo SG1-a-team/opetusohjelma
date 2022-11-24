@@ -7,7 +7,7 @@
         <title>Quiz</title>
 
         <link rel="stylesheet" href="#" />
-        <script src="/Javascript/Tommi.js" defer></script>
+        <script src="/opetusohjelma/Javascript/Tommi.js" defer></script>
     </head>
     <body>
       <section>
@@ -30,10 +30,14 @@
             <input type="radio" name="valinta1" id="vastaus4">
             <label for="tampere1"> Tampere</label>
           </div>
-          <br>
           <div>
-            <input type="button" value="Vastaa">
+            <p id="kysymys_tulos"></p>
+            <p id="valintavirhe" class="virhe"></p>
           </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys1">
+          </div>
+  
           </form>
           <!-- second question -->
           <form>
@@ -132,7 +136,7 @@
           </div>
         </form>
         <div>
-          <p id="kysymys_tulos"></p>
+          <p id="kysymys_tulos1"></p>
           <p id="valintavirhe" class="virhe"></p>
         </div>
       </section>
