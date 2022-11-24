@@ -1,4 +1,4 @@
-let linkki1 = document.getElementById('linkki1');
+let link2 = document.getElementById('link2');
 let otter = document.getElementById('otter');
 
 function animation() {
@@ -9,8 +9,6 @@ function no_animation() {
     otter.classList.remove('fa-bounce');
 }
 
-linkki1.addEventListener('mouseenter', animation);
-linkki1.addEventListener('mouseleave', no_animation);
-
-
+link2.addEventListener('mouseenter', animation);
+link2.addEventListener('mouseleave', no_animation);
 
