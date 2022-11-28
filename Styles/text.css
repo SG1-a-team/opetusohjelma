@@ -21,3 +21,7 @@
     justify-content: flex-start;
     align-content: center;
 }
+body {
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2em;
+}
