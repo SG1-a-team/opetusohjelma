@@ -1,6 +1,5 @@
 #navbar {
     border: 5px solid #DA4F00;
-    border-radius: 5px;
     background-color: #FF995F;
     font-weight: bold;
     }
@@ -55,7 +54,6 @@ p, a {
 footer {
     background-color: #FF995F;
     border: 5px solid #DA4F00;
-    border-radius: 5px;
     width: 100%;
     margin: 0;
 }
