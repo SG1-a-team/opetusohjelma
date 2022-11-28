@@ -1,0 +1,23 @@
+.row{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+
+}
+
+.col-2 {
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+ 
+.col-10 {
+    display: flex;
+    grid-column: 2/3;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
