@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b0414a5597.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>Karuselli</header>
-    <nav>Navikointi</nav>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-md">
+        <a class="navbar-brand" href="#" id="link1">Etusivu <i class="fa-solid fa-dungeon" id="home"> </i></a> 
+        <a class="navbar-brand" href="#" id="link2">Eläintarha <i class="fa-solid fa-otter" id="otter"> </i></a>
+        <a class="navbar-brand" href="#" id="link3">Maantieto <i class="fa-solid fa-kiwi-bird" id="kiwi"></i></a>
+        <a class="navbar-brand" href="#" id="link4">Alkuaineet <i class="fa-solid fa-crow" id="crow"></i></a>
+        <a class="navbar-brand" href="#" id="link5">Ympäristöoppi <i class="fa-solid fa-frog" id="frog"></i></a>
+        <a class="navbar-brand" href="#" id="link6">Matikkavisa <i class="fa-solid fa-dog" id="dog"></i></a>
+        <a class="navbar-brand" href="#" id="link7">Tietoja <i class="fa-regular fa-lightbulb" id="bulb"></i></a>
+      </div>
+    </nav>
     <div>
       <object type="text/html" data="HTML/text.html" width="100%" height="600px" style="overflow:auto;border:5px ridge blue">
       </object>
