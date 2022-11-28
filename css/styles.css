@@ -1,3 +1,14 @@
+#navbar {
+    border: 5px solid #DA4F00;
+    border-radius: 5px;
+    background-color: #FF995F;
+    font-weight: bold;
+    }
+
+
+#navbar a:hover {
+    color: #056888;
+}
 .carousel .carousel-item {
     height: 200px;
     
