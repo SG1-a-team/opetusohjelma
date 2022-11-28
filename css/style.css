@@ -1,3 +1,14 @@
 .nav-item {
-    padding: 15px;
+    padding:5px;
+    color: blue;
+    border: 1px solid black;
+}
+
+.container p {
+    color: brown;
+    border: 1px solid black;
+}
+
+body {
+    background-color: bisque;
 }
