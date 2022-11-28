@@ -65,3 +65,8 @@ footer .div .container {
     color: black;
 }
 
+footer img {
+    max-height: 100px;
+    background-color: white;
+}
+
