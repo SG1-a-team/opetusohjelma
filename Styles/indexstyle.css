@@ -42,7 +42,7 @@ h5 {
     font-size: 2em;
 }
 
-p, a {
+p, a, footer{
     font-family: 'Livvic', sans-serif;
     font-size: 1.1em;
 }
