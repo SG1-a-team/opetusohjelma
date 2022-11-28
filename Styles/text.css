@@ -25,3 +25,14 @@ body {
     font-family: 'Livvic', sans-serif;
     font-size: 1.2em;
 }
+
+@media screen and (max-width: 768px){
+
+.col-2{
+    display: none;
+}
+.col-10{
+    grid-column: 1/3;
+
+}
+}
