@@ -38,6 +38,16 @@ button{
     color: orange;
 }
 
+h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2em;
+}
+
+p, a {
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.1em;
+}
+
 .nav-item {
     padding:5px;
 }
