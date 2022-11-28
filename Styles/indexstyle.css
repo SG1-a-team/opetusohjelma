@@ -37,3 +37,18 @@
 button{
     color: orange;
 }
+
+.nav-item {
+    padding:5px;
+}
+
+footer {
+    background-color: #FF995F;
+    border: 5px solid #DA4F00;
+    border-radius: 5px;
+
+}
+
+.nav-item, footer {
+    color: black;
+}
