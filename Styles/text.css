@@ -1,0 +1,38 @@
+.row{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+
+}
+
+.col-2 {
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+ 
+.col-10 {
+    display: flex;
+    grid-column: 2/3;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+body {
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 768px){
+
+.col-2{
+    display: none;
+}
+.col-10{
+    grid-column: 1/3;
+
+}
+}
