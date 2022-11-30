@@ -1,5 +1,6 @@
 body {
     background-color: #ffC25F;
+    background-image: url(/opetusohjelma/CSS/background-1430099_1280.png);
     padding: 5px;
 }
 
@@ -17,6 +18,7 @@ body {
 border: 3px solid #DA8700;
 border-radius: 5px;
 background-color: #FFE7C0;
+padding: 5px;
 }
 
 .text {
@@ -61,21 +63,33 @@ h3 {
     grid-column: 2;
     grid-row: 2/7;
     background-color: #FFE7C0;
-}
-
-.side, h3 {
-    font-weight: bolder;
-    font-size: 1.5em;
     text-align: center;
 }
+
 
 .prizetable{
     background-color: white;
     justify-content: center;
+    justify-self: center;
 }
+
+.prizes {
+    justify-content: center;
+}
+
+.feedback {
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
 
 td {
     border: 1px solid black;
     min-width: 50px;
     padding: 3px;
+}
+
+.side img {
+    max-width:200px;
 }
