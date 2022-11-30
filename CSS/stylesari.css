@@ -1,0 +1,50 @@
+body {
+    background-color: bisque;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 100vh;
+    gap: 5px;
+}
+
+.quiz1, .quiz2, .quiz3, .quiz4, .quiz5 {
+border: 1px solid black;
+}
+
+.text {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+}
+
+.quiz1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.quiz2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.quiz3 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.quiz4 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.quiz5 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.side {
+    grid-column: 2;
+}
