@@ -7,7 +7,7 @@
         <title>Quiz</title>
 
         <link rel="stylesheet" href="../Styles/Tommi.css" />
-        <script src="./JS/Tommi.js" defer></script>
+        <script src="../JS/Tommi.js" defer></script>
     </head>
     <body>
       <section>
@@ -15,7 +15,7 @@
         <form>
           <div>
             <h2>Mikä on Suomen pääkaupunki</h2>
-            <input type="radio" name="valinta1" id="vastaus1">
+            <input type="radio" name="valinta1" id="vastaus1" checked>
             <label for="turku1"> Turku</label>
           </div>
           <div>
@@ -31,19 +31,19 @@
             <label for="tampere1"> Tampere</label>
           </div>
           <div>
-            <p id="kysymys_tulos"></p>
-            <p id="valintavirhe" class="virhe"></p>
+            <p id="tulos1"></p>
+            <p id="valintavirhe1" class="virhe"></p>
           </div>
           <div>
             <input type="button" value="Vastaa" id="kysymys1">
           </div>
-  
-          </form>
+        </form>
+          
           <!-- second question -->
           <form>
           <div>
             <h2>Mikä seuraavista pohjoismaista on eteläisin</h2>
-            <input type="radio" name="valinta2" id="vastaus5">
+            <input type="radio" name="valinta2" id="vastaus5" checked>
             <label for="tanska2"> Tanska</label>
           </div>
           <div>
@@ -58,16 +58,19 @@
             <input type="radio" name="valinta2" id="vastaus8">
             <label for="suomi2"> Suomi</label>
           </div>
-          <br>
           <div>
-            <input type="button" value="Vastaa">
+            <p id="tulos2"></p>
+            <p id="valintavirhe2" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys2">
           </div>
           </form>
           <!-- third question -->
           <form>
           <div>
             <h2>Mistä Eurooppalaisesta pääkaupungista löytyy Eiffel-torni</h2>
-            <input type="radio" name="valinta3" id="vastaus9">
+            <input type="radio" name="valinta3" id="vastaus9" checked>
             <label for="berliini3"> Berliini</label>
           </div>
           <div>
@@ -82,16 +85,19 @@
             <input type="radio" name="valinta3" id="vastaus12">
             <label for="tukholma3"> Tukholma</label>
           </div>
-          <br>
           <div>
-            <input type="button" value="Vastaa">
+            <p id="tulos3"></p>
+            <p id="valintavirhe3" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys3">
           </div>
           </form>
           <!-- fourth question -->
           <form>
           <div>
             <h2>Mikä on maailman korkein vuori</h2>
-            <input type="radio" name="valinta4" id="vastaus13">
+            <input type="radio" name="valinta4" id="vastaus13" checked>
             <label for="kebenekaise4"> Kebenekaise</label>
           </div>
           <div>
@@ -106,16 +112,19 @@
             <input type="radio" name="valinta4" id="vastaus16">
             <label for="makula4"> Makalu</label>
           </div>
-          <br>
           <div>
-            <input type="button" value="Vastaa">
+            <p id="tulos4"></p>
+            <p id="valintavirhe4" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys4">
           </div>
           </form>
           <!-- fifth question -->
           <form>
           <div>
             <h2>Minkä maan lipussa on keltainen risti</h2>
-            <input type="radio" name="valinta5" id="vastaus17">
+            <input type="radio" name="valinta5" id="vastaus17" checked>
             <label for="suomi5"> Suomi</label>
           </div>
           <div>
@@ -130,9 +139,12 @@
             <input type="radio" name="valinta5" id="vastaus20">
             <label for="norja5"> Norja</label>
           </div>
-        <br>
           <div>
-            <input type="button" value="Vastaa">
+            <p id="tulos5"></p>
+            <p id="valintavirhe5" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys5">
           </div>
         </form>
         <div>
