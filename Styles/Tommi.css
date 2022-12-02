@@ -1,5 +1,5 @@
 body {
-    background-color: #ffC25F;
+    background-color: #e69566;
     padding: 5px;
 }
 
@@ -14,9 +14,9 @@ section {
 }
 
 form {
-    border: 3px solid #da8600;
+    border: 3px solid #ab6b04;
     border-radius: 5px;
-    background-color: #f8cb83;
+    background-color: #e2ad8e;
     padding: 5px;
 }
 
@@ -63,11 +63,11 @@ h2 {
 .side {
     display: flex;
     font-size: 4em;
-    border: 3px solid #DA8700;
+    border: 3px solid #ab6b04;
     border-radius: 5px;
     grid-column: 2;
     grid-row: 2/3;
-    background-color: #f8cb83;
+    background-color: #e2ad8e;
     justify-content: center;
     align-items: center;
 }
