@@ -149,6 +149,12 @@ h2 {
     text-align: center;
     padding: 10px;
 }
+.kuvat{
+    grid-column: 2/3;
+    grid-row: 3/7;
+    border: 3px solid #03465d;
+    background-color: #98B5C0;
+}
 
 
 
