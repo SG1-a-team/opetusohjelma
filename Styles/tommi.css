@@ -84,7 +84,7 @@ body {
     display: grid;
     grid-template-columns: 3fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
     font-family: 'livvic', sans-serif;
     font-size: 1em;
 }
@@ -92,7 +92,7 @@ body {
 form {
     border: 3px solid #ab6b04;
     border-radius: 5px;
-    background-color: #e2ad8e;
+    background-color: white;
     padding: 5px;
 }
 
@@ -137,7 +137,7 @@ h2 {
     border-radius: 5px;
     grid-column: 1/2;
     grid-row: 6/7;
-    background-color: #e2ad8e;
+    background-color: white;
     justify-content: center;
     align-items: center;
 }
