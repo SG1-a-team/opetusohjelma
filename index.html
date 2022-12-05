@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Livvic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/indexstyle.css">
-    <script src = "./JS/indexjs.js" defer></script>
+    <script src = "./JS/Tommi.js" defer></script>
   </head>
   <body>
     <header>
@@ -65,8 +65,148 @@
       </div>
     </nav>
     <div class="inside-html">
-      <object type="text/html" data="HTML/text.html" width="100%" height="400px" style="border:5px solid #DA4F00">
-      </object>
+      <div class="game">
+        <!-- First question -->
+        <form class="quiz1">
+          <div>
+            <h2>Mikä on Suomen pääkaupunki</h2>
+            <input type="radio" name="valinta1" id="vastaus1" checked>
+            <label for="turku1"> Turku</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta1" id="vastaus2">
+            <label for="oulu1"> Oulu</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta1" id="vastaus3">
+            <label for="helsinki1"> Helsinki</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta1" id="vastaus4">
+            <label for="tampere1"> Tampere</label>
+          </div>
+          <div>
+            <p id="tulos1"></p>
+            <p id="valintavirhe1" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys1">
+          </div>
+        </form>
+          
+          <!-- second question -->
+          <form class="quiz2">
+          <div>
+            <h2>Mikä seuraavista pohjoismaista on eteläisin</h2>
+            <input type="radio" name="valinta2" id="vastaus5" checked>
+            <label for="tanska2"> Tanska</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta2" id="vastaus6">
+            <label for="norja2"> Norja</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta2" id="vastaus7">
+            <label for="islanti2"> Islanti</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta2" id="vastaus8">
+            <label for="suomi2"> Suomi</label>
+          </div>
+          <div>
+            <p id="tulos2"></p>
+            <p id="valintavirhe2" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys2">
+          </div>
+          </form>
+          <!-- third question -->
+          <form class="quiz3">
+          <div>
+            <h2>Mistä Eurooppalaisesta pääkaupungista löytyy Eiffel-torni</h2>
+            <input type="radio" name="valinta3" id="vastaus9" checked>
+            <label for="berliini3"> Berliini</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta3" id="vastaus10">
+            <label for="pariisi3"> Pariisi</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta3" id="vastaus11">
+            <label for="moskova3"> Moskova</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta3" id="vastaus12">
+            <label for="tukholma3"> Tukholma</label>
+          </div>
+          <div>
+            <p id="tulos3"></p>
+            <p id="valintavirhe3" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys3">
+          </div>
+          </form>
+          <!-- fourth question -->
+          <form class="quiz4">
+          <div>
+            <h2>Mikä on maailman korkein vuori</h2>
+            <input type="radio" name="valinta4" id="vastaus13" checked>
+            <label for="kebenekaise4"> Kebenekaise</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta4" id="vastaus14">
+            <label for="taivasvuori4"> Taivasvuori</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta4" id="vastaus15">
+            <label for="mount_everest4"> Mount Everest</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta4" id="vastaus16">
+            <label for="makula4"> Makalu</label>
+          </div>
+          <div>
+            <p id="tulos4"></p>
+            <p id="valintavirhe4" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys4">
+          </div>
+          </form>
+          <!-- fifth question -->
+          <form class="quiz5">
+          <div>
+            <h2>Minkä maan lipussa on keltainen risti</h2>
+            <input type="radio" name="valinta5" id="vastaus17" checked>
+            <label for="suomi5"> Suomi</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta5" id="vastaus18">
+            <label for="ruotsi5"> Ruotsi</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta5" id="vastaus19">
+            <label for="saksa5"> Saksa</label>
+          </div>
+          <div>
+            <input type="radio" name="valinta5" id="vastaus20">
+            <label for="norja5"> Norja</label>
+          </div>
+          <div>
+            <p id="tulos5"></p>
+            <p id="valintavirhe5" class="virhe"></p>
+          </div>
+          <div>
+            <input type="button" value="Vastaa" id="kysymys5">
+          </div>
+        </form>
+        <!-- scoreboard -->
+        <div class="side">
+          <p id="score"></p>
+        </div>
+      </div>
     </div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 m-0 px-1">
       <div class="container">
