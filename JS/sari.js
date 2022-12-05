@@ -24,6 +24,7 @@ function element(ID){
 
 function print_alias() {
     let alias = document.getElementById('name').value
+    document.getElementById('name').innerHTML = "";
     document.getElementById('feedback').innerHTML = 'Kiva kun tulit tekemään testiä ' + alias + '! Kylläpä on jännittävää'  
 }
 
