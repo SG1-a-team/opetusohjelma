@@ -54,10 +54,12 @@ function check_q1() {
     if (document.getElementById('q1a2').checked == true) {
         answerInput.innerHTML = RIGHT + CORRECT_Q1;
         correctCounter = +1;
+        document.getElementById('prize1').innerHTML = '<i class="fa-solid fa-star">' + '</i>'
     }
 
-    else {answerInput.innerHTML = WRONG + CORRECT_Q1}
-    alert(counter);
+    else {
+        answerInput.innerHTML = WRONG + CORRECT_Q1
+    }
     
 
 }
