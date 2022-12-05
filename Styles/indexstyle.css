@@ -150,16 +150,63 @@ h2 {
     padding: 10px;
 }
 .kuvat{
+    display: flex;
+    flex-direction: column;
     grid-column: 2/3;
     grid-row: 3/7;
     border: 3px solid #03465d;
     background-color: #98B5C0;
+    padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+.kuvat img{
+    width: 80%;
 }
 
 
 
+@media screen and (max-width: 912px){
+.game{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+}
+.quiz1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
 
-@media screen and (max-width: 768px){
+.quiz2 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.quiz3 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.quiz4 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.quiz5 {
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+.scoreboard{
+    grid-column: 1/2;
+    grid-row: 7/8;
+}
+.kuvat{
+    display: none;
+}
+.side{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 
 footer img{
     display: none;
