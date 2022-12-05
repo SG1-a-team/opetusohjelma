@@ -1,6 +1,6 @@
 #navbar {
-    border: 5px solid #DA4F00;
-    background-color: #FF995F;
+    border: 4px solid #03465d;
+    background-color: #98B5C0;
     font-weight: bold;
     }
 
@@ -52,8 +52,8 @@ p, a, footer{
 }
 
 footer {
-    background-color: #FF995F;
-    border: 5px solid #DA4F00;
+    border: 3px solid #03465d;
+    background-color: #98B5C0;
     width: 100%;
     margin: 0;   
 }
@@ -76,29 +76,29 @@ footer img {
 
 
 body {
-    background-color: #e69566;
+    background-color: #056888;
     padding: 5px;
 }
 
 .game {
     display: grid;
-    grid-template-columns: 3fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 10px;
     font-family: 'livvic', sans-serif;
     font-size: 1em;
 }
 
 form {
-    border: 3px solid #ab6b04;
+    border: 3px solid #03465d;
+    background-color: #98B5C0;
     border-radius: 5px;
-    background-color: #e2ad8e;
     padding: 5px;
 }
 
 p{
     font-size: 1.5em;
-    color: #1a4e0b;
+    color: #03465d;
 }
 
 h2 {
@@ -130,16 +130,24 @@ h2 {
     grid-row: 5/6;
 }
 
-.side {
+.scoreboard {
     display: flex;
     font-size: 4em;
-    border: 3px solid #ab6b04;
+    border: 3px solid #03465d;
     border-radius: 5px;
     grid-column: 1/2;
     grid-row: 6/7;
-    background-color: #e2ad8e;
+    background-color: #98B5C0;
     justify-content: center;
     align-items: center;
+}
+.side{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border: 3px solid #03465d;
+    background-color: #98B5C0;
+    text-align: center;
+    padding: 10px;
 }
 
 
