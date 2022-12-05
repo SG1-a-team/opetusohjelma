@@ -13,6 +13,17 @@ body {
     font-size: 1em;
 }
 
+.btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #DA8700;
+}
+
+.btn:hover {
+    background-color: #FFD68F;
+    border: 1px solid black;
+}
+
 .quiz1, .quiz2, .quiz3, .quiz4, .quiz5 {
 border: 3px solid #DA8700;
 border-radius: 5px;
@@ -80,6 +91,7 @@ h3 {
     border: 1px solid black;
     border-radius: 20px;
     background-color: white;
+    padding: 3px;
 }
 
 

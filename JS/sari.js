@@ -20,27 +20,46 @@ function element(ID){
     document.getElementById(ID)
 }
 
+
+
+function print_alias() {
+    let alias = document.getElementById('name').value
+    document.getElementById('feedback').innerHTML = 'Kiva kun tulit tekemään testiä ' + alias + '! Kylläpä on jännittävää'  
+}
+
+let aliasButton = document.getElementById('alias');
+aliasButton.addEventListener('click', print_alias);
+
+
 //Counter to keep track
- counter = 0;
+ var counter = 0;
+ var correctCounter = 0;
+
+ 
 
 
 function check_q1() {
-    let checkbox = document.getElementsByClassName("check")
-    let answerInput = document.getElementById("printResult1")
-    answerInput.innerHTML = "";
 
-    if (checkbox.checked == false) {
-        answerInput.innerHTML = "Valitse yksi vaihtoehdoista";
-    } 
+    //define variables
+    let answerInput = document.getElementById("printResult1")
+    let answerButton1 = document.getElementById('answer1');
+    answerInput.innerHTML = "";
+    counter = +1
+    
+    //disable button, so answer cannot be changed
+
+    answerButton1.disabled = 'true';
 
     if (document.getElementById('q1a2').checked == true) {
         answerInput.innerHTML = RIGHT + CORRECT_Q1;
+        correctCounter = +1;
     }
 
     else {answerInput.innerHTML = WRONG + CORRECT_Q1}
+    alert(counter);
     
 
 }
 
-let answerButton1 = document.getElementById('answer1');
-answerButton1.addEventListener('click', check_q1);
+/* let answerButton1 = document.getElementById('answer1');
+answerButton1.addEventListener('click', check_q1); */
