@@ -15,113 +15,115 @@
     <div id = content>
     <div class = text><h3>Tervetuloa tekemään enkkutestiä!</h3>
     
-        <p><br>Syötä ihan aluksi nimi tai nimimerkki: <input type=text></input>  <button type="button" id="alias" class="btn btn-light btn-sm">Lähetä</button></p>
+        <p><br>Syötä ihan aluksi nimi tai nimimerkki: <input type=text id ="name"></input>  <button type="button" id="alias" class="btn btn-light btn-sm">Lähetä</button></p>
 
     <p>Tällä sivulla on viisi kysymystä englannin kieleen liittyen. Kysymykset koskevat sanastoa ja sanontoja.
     Valitse vastauksesi huolellisesti, sillä vastausta ei voi vaihtaa jälkikäteen. Jokaiseen kysymykseen on yksi oikea vastaus. Sivulla on myös tulostaulu, josta näet moneenko kysymykseen olet
 vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
 </div>
-    <div class = quiz1><b>kysymys 1:</b>Tähän kirjoitetaan kysymys 
+    <div class = quiz1><b>kysymys 1:</b>Mikä on "ananas" englanniksi? 
         
         <div>
-        <input type="radio" name="valinta1" id="q1a1">
-        <label for="q1a1"> vastaus 1</label>
+            <form>
+        <input type="radio" name="valinta1" id="q1a1" class="check">
+        <label for="q1a1"> pear </label>
     </div>
     <div>
-        <input type="radio" name="valinta1" id="q1a2">
-        <label for="q1a2"> vastaus 2</label>
+        <input type="radio" name="valinta1" id="q1a2" class="check">
+        <label for="q1a2"> pineapple </label>
     </div>
     <div>
-        <input type="radio" name="valinta1" id="q1a3">
-        <label for="q1a3"> vastaus 3</label>
+        <input type="radio" name="valinta1" id="q1a3" class="check">
+        <label for="q1a3"> cherry </label>
     </div>
     <div>
-        <input type="radio" name="valinta1" id="q1a4">
-        <label for="q1a4"> vastaus 4</label>
+        <input type="radio" name="valinta1" id="q1a4" class="check">
+        <label for="q1a4"> grape </label>
 
-        <p><button type="button" class="btn btn-light">Vastaa</button></p>
-    
+        <p><button type="button" class="btn btn-light" id="answer1" onclick="check_q1()">Vastaa</button></p>
+        <p id ="printResult1"></p>
+    </form>
     </div></div>
-    <div class = quiz2><b>kysymys 2:</b>Tähän kirjoitetaan kysymys 
+    <div class = quiz2><b>kysymys 2:</b>Jatka lausetta: "You should not go outside, weather forecast said there is going to be..." 
         
         <div>
         <input type="radio" name="valinta1" id="q2a1">
-        <label for="q2a1"> vastaus 1</label>
+        <label for="q2a1"> ...thunderstorm</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q2a2">
-        <label for="q2a2"> vastaus 2</label>
+        <label for="q2a2"> ...waterfall</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q2a3">
-        <label for="q2a3"> vastaus 3</label>
+        <label for="q2a3"> ...surface</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q2a4">
-        <label for="q2a4"> vastaus 4</label>
+        <label for="q2a4"> ...blackout </label>
 
         <p><button type="button" class="btn btn-light">Vastaa</button></p>
     
     </div></div>
-    <div class = quiz3><b>kysymys 3:</b>Tähän kirjoitetaan kysymys 
+    <div class = quiz3><b>kysymys 3:</b>Kuinka sanot englanniksi "Parempi myöhään kun ei milloinkaan"?
         
         <div>
         <input type="radio" name="valinta1" id="q3a1">
-        <label for="q3a1"> vastaus 1</label>
+        <label for="q3a1"> So far so good</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q3a2">
-        <label for="q3a2"> vastaus 2</label>
+        <label for="q3a2"> Better late than never</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q3a3">
-        <label for="q3a3"> vastaus 3</label>
+        <label for="q3a3"> To make matters worse</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q3a4">
-        <label for="q3a4"> vastaus 4</label>
+        <label for="q3a4"> That's the last straw</label>
 
         <p><button type="button" class="btn btn-light">Vastaa</button></p>
     
     </div></div>
-    <div class = quiz4><b>kysymys 4:</b>Tähän kirjoitetaan kysymys 
+    <div class = quiz4><b>kysymys 4:</b>Mitä tarkoittaa englannin sana fork? 
         
         <div>
         <input type="radio" name="valinta1" id="q4a1">
-        <label for="q4a1"> vastaus 1</label>
+        <label for="q4a1"> porsas </label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q4a2">
-        <label for="q4a2"> vastaus 2</label>
+        <label for="q4a2"> aita</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q4a3">
-        <label for="q4a3"> vastaus 3</label>
+        <label for="q4a3"> tie </label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q4a4">
-        <label for="q4a4"> vastaus 4</label>
+        <label for="q4a4"> haarukka</label>
 
         <p><button type="button" class="btn btn-light">Vastaa</button></p>
     
     </div></div>
-    <div class = quiz5><b>Kysymys 5:</b> Tähän kirjoitetaan kysymys 
+    <div class = quiz5><b>Kysymys 5:</b> Mikä on "onnekas" englanniksi?
         
         <div>
         <input type="radio" name="valinta1" id="q5a1">
-        <label for="q5a1"> vastaus 1</label>
+        <label for="q5a1"> happy</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q5a2">
-        <label for="q5a2"> vastaus 2</label>
+        <label for="q5a2"> good</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q5a3">
-        <label for="q5a3"> vastaus 3</label>
+        <label for="q5a3"> merry</label>
     </div>
     <div>
         <input type="radio" name="valinta1" id="q5a4">
-        <label for="q5a4"> vastaus 4</label>
+        <label for="q5a4"> lucky</label>
 
         <p><button type="button" class="btn btn-light">Vastaa</button></p>
     
