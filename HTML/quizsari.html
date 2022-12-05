@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://kit.fontawesome.com/b0414a5597.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Livvic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/opetusohjelma/CSS/stylesari.css">
@@ -20,7 +21,7 @@
     Valitse vastauksesi huolellisesti, sillä vastausta ei voi vaihtaa jälkikäteen. Jokaiseen kysymykseen on yksi oikea vastaus. Sivulla on myös tulostaulu, josta näet moneenko kysymykseen olet
 vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
 </div>
-    <div class = quiz1><b>kysymys 1:</b>Mikä on "ananas" englanniksi? 
+    <div class = "quiz1" id = "quiz1"><b>kysymys 1:</b>Mikä on "ananas" englanniksi? 
         
         <div>
     
@@ -39,11 +40,11 @@ vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
         <input type="radio" name="choice1" id="q1a4" class="check">
         <label for="q1a4"> grape </label>
 
-        <p><button type="button" class="btn" id="answer1" onclick="check_q1()">Vastaa</button></p>
+        <p><button type="button" class="btn" id="answer1">Vastaa</button> <button type="button" class="btn invisible" id="next1">Seuraava kysymys</button>   </p>
         <p id ="printResult1"></p>
     
     </div></div>
-    <div class = quiz2><b>kysymys 2:</b>Jatka lausetta: "You should not go outside, weather forecast said there is going to be..." 
+    <div class = "quiz2 invisible" id = "quiz2"><b>kysymys 2:</b>Jatka lausetta: "You should not go outside, weather forecast said there is going to be..." 
         
         <div>
         <input type="radio" name="choice2" id="q2a1" checked>
@@ -61,10 +62,11 @@ vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
         <input type="radio" name="choice2" id="q2a4">
         <label for="q2a4"> ...blackout </label>
 
-        <p><button type="button" class="btn btn-light">Vastaa</button></p>
+        <p><button type="button" class="btn" id="answer2">Vastaa</button> <button type="button" class="btn invisible" id="next2">Seuraava kysymys</button> </p>
+        <p id ="printResult2"></p>
     
     </div></div>
-    <div class = quiz3><b>kysymys 3:</b>Kuinka sanot englanniksi "Parempi myöhään kun ei milloinkaan"?
+    <div class = "quiz3 invisible" id = "quiz3"><b>kysymys 3:</b>Kuinka sanot englanniksi "Parempi myöhään kun ei milloinkaan"?
         
         <div>
         <input type="radio" name="choice3" id="q3a1" checked>
@@ -82,10 +84,11 @@ vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
         <input type="radio" name="choice3" id="q3a4">
         <label for="q3a4"> That's the last straw</label>
 
-        <p><button type="button" class="btn btn-light">Vastaa</button></p>
+        <p><button type="button" class="btn" id="answer3">Vastaa</button> <button type="button" class="btn invisible" id="next3">Seuraava kysymys</button> </p>
+        <p id ="printResult3"></p>
     
     </div></div>
-    <div class = quiz4><b>kysymys 4:</b>Mitä tarkoittaa englannin sana fork? 
+    <div class = "quiz4 invisible" id = "quiz4"><b>kysymys 4:</b>Mitä tarkoittaa englannin sana fork? 
         
         <div>
         <input type="radio" name="choice4" id="q4a1" checked>
@@ -103,10 +106,11 @@ vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
         <input type="radio" name="choice4" id="q4a4">
         <label for="q4a4"> haarukka</label>
 
-        <p><button type="button" class="btn btn-light">Vastaa</button></p>
+        <p><button type="button" class="btn" id="answer4">Vastaa</button> <button type="button" class="btn invisible" id="next4">Seuraava kysymys</button> </p>
+        <p id ="printResult4"></p>
     
     </div></div>
-    <div class = quiz5><b>Kysymys 5:</b> Mikä on "onnekas" englanniksi?
+    <div class = "quiz5 invisible" id = "quiz5"><b>Kysymys 5:</b> Mikä on "onnekas" englanniksi?
         
         <div>
         <input type="radio" name="choice5" id="q5a1" checked>
@@ -124,13 +128,14 @@ vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
         <input type="radio" name="choice5" id="q5a4">
         <label for="q5a4"> lucky</label>
 
-        <p><button type="button" class="btn btn-light">Vastaa</button></p>
+        <p><button type="button" class="btn" id="answer5">Vastaa</button> <button type="button" class="btn invisible" id="next5">Palaute</button> </p>
+        <p id ="printResult5"></p>
     
     </div>
     </div>
     <div class = side> <h3>Tulokset</h3>
-        <p id="answersAmount">Vastatut kysymykset:</p>
-        <p id="correctAmount">Oikeat vastaukset:</p>
+        <p id="answersAmount">Vastatut kysymykset: 0/5</p>
+        <p id="correctAmount">Oikeat vastaukset: 0</p>
     <h3>Palkinnot</h3>
       <div class = prizes><table class = prizetable><tr>
     <td id = "prize1">1</td>
@@ -140,7 +145,7 @@ vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
     <td id = "prize5">5</td>
     </tr></table></div><br><br>
 
-    <div class = feedback><p id ="feedback"></p></div>
+    <div class = feedback><p id ="feedback">Hauskaa nähdä miten testi menee!</p></div>
     <img src="/opetusohjelma/pics/crow2.PNG">
     </div>
 

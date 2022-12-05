@@ -5,12 +5,16 @@ body {
 
 #content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
     height: 100vh;
-    gap: 5px;
+    gap: 10px;
     font-family: 'livvic', sans-serif;
     font-size: 1em;
+}
+
+.invisible {
+    display: none;
 }
 
 .btn {
@@ -49,29 +53,29 @@ h3 {
 
 .quiz2 {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
 }
 
 .quiz3 {
     grid-column: 1;
-    grid-row: 4;
+    grid-row: 2;
 }
 
 .quiz4 {
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 2;
 }
 
 .quiz5 {
     grid-column: 1;
-    grid-row: 6;
+    grid-row: 2;
 }
 
 .side {
     border: 3px solid #DA8700;
     border-radius: 5px;
     grid-column: 2;
-    grid-row: 2/7;
+    grid-row: 2/3;
     background-color: #FFE7C0;
     text-align: center;
 }
