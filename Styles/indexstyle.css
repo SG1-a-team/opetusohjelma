@@ -1,7 +1,13 @@
+body {
+    background-color: #056888;
+    padding: 5px;
+    margin: 0px;
+}
 #navbar {
     border: 4px solid #03465d;
     background-color: #98B5C0;
     font-weight: bold;
+    margin-bottom: 10px ;
     }
 
 
@@ -75,11 +81,6 @@ footer img {
 }
 
 
-body {
-    background-color: #056888;
-    padding: 5px;
-}
-
 .game {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -140,6 +141,7 @@ h2 {
     background-color: #98B5C0;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 .side{
     grid-column: 2/3;
@@ -148,6 +150,7 @@ h2 {
     background-color: #98B5C0;
     text-align: center;
     padding: 10px;
+    
 }
 .kuvat{
     display: flex;
@@ -159,6 +162,7 @@ h2 {
     padding: 20px 20px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .kuvat img{
     width: 80%;
