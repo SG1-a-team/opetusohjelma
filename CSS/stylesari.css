@@ -6,7 +6,7 @@ body {
 #content {
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
     height: 100vh;
     gap: 10px;
     font-family: 'livvic', sans-serif;
@@ -33,6 +33,7 @@ border: 3px solid #DA8700;
 border-radius: 5px;
 background-color: #FFE7C0;
 padding: 5px;
+
 }
 
 .text {
@@ -42,8 +43,14 @@ padding: 5px;
 
 }
 
+h2 {
+    text-align: center;
+    font-family: 'Caveat Brush', cursive;
+}
+
 h3 {
     text-align: center;
+    font-family: 'Caveat Brush', cursive;
 }
 
 .quiz1 {
@@ -80,11 +87,11 @@ h3 {
     text-align: center;
 }
 
-
 .prizetable{
     background-color: white;
     justify-content: center;
-    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .prizes {
@@ -96,8 +103,8 @@ h3 {
     border-radius: 20px;
     background-color: white;
     padding: 3px;
+    margin: 5px;
 }
-
 
 td {
     border: 1px solid black;
@@ -108,3 +115,24 @@ td {
 .side img {
     max-width:200px;
 }
+
+@media screen and (max-width: 768px) {
+
+    #content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+    .quiz1, .quiz2, .quiz3, .quiz4, .quiz5 {
+        grid-row: 2;
+        grid-column: 1/2;
+    }
+
+    .side {
+        grid-row: 3;
+        grid-column: 1/2;
+    }
+}
+
+        

@@ -23,28 +23,15 @@ const CORRECT_Q5 = '<li>' + 'happy = iloinen' + '<li>' + 'good = hyvä' + '<li>'
  var nextButton4 = document.getElementById('next4');
  var nextButton5 = document.getElementById('next5');
 
-
- 
  const FEEDBACK = document.getElementById('feedback');
-
-//Functions to make some things easier
-
-/**
- * 
- * @param {HTML element} ID 
- */
-
-function element(ID){
-    document.getElementById(ID)
-}
 
 //player alias
 
 function print_alias() {
     let alias = document.getElementById('name').value
     document.getElementById('name').value = "";
-    document.querySelector('h3').textContent = 'Tervetuloa tekemään enkkutestiä ' + alias + '!'
-    document.getElementById('feedback').innerHTML = 'Kiva kun tulit tekemään testiä ' + alias + '! Kylläpä on jännittävää'  
+    document.getElementById('title').textContent = 'Tervetuloa tekemään enkkutestiä ' + alias + '!'
+    document.getElementById('feedback').innerHTML = 'Kiva kun tulit tekemään testiä ' + alias + '! Jännittävää nähdä kuinka käy.'  
 }
 
 let aliasButton = document.getElementById('alias');
@@ -73,7 +60,7 @@ function check_q1() {
     if (document.getElementById('q1a2').checked == true) {
         answerInput.innerHTML = RIGHT + CORRECT_Q1;
         correctCounter++;
-        document.getElementById('prize1').innerHTML = '<i class="fa-solid fa-star fa-beat">' + '</i>'
+        document.getElementById('prize1').innerHTML = '<i class="fa-regular fa-star fa-beat">' + '</i>'
     }
 
     //If answer is not correct
@@ -83,6 +70,7 @@ function check_q1() {
         document.getElementById('prize1').innerHTML = '<i class="fa-solid fa-xmark"></i>'
     }
 
+    //update counters & move to next question
     answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
     correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
     nextButton1.classList.remove('invisible');   
@@ -118,7 +106,7 @@ function check_q2() {
     if (document.getElementById('q2a1').checked == true) {
         answerInput.innerHTML = RIGHT + CORRECT_Q2;
         correctCounter++;
-        document.getElementById('prize2').innerHTML = '<i class="fa-solid fa-star fa-beat">' + '</i>'
+        document.getElementById('prize2').innerHTML = '<i class="fa-regular fa-thumbs-up fa-beat"></i>'
     }
 
     //If answer is not correct
@@ -128,6 +116,7 @@ function check_q2() {
         document.getElementById('prize2').innerHTML = '<i class="fa-solid fa-xmark"></i>'
     }
 
+    //update counters & move to next question
     answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
     correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
     nextButton2.classList.remove('invisible');
@@ -163,7 +152,7 @@ function check_q3() {
     if (document.getElementById('q3a2').checked == true) {
         answerInput.innerHTML = RIGHT + CORRECT_Q3;
         correctCounter++;
-        document.getElementById('prize3').innerHTML = '<i class="fa-solid fa-star fa-beat">' + '</i>'
+        document.getElementById('prize3').innerHTML = '<i class="fa-solid fa-splotch fa-beat">' + '</i>'
     }
 
     //If answer is not correct
@@ -173,6 +162,7 @@ function check_q3() {
         document.getElementById('prize3').innerHTML = '<i class="fa-solid fa-xmark"></i>'
     }
 
+    //update counters & move to next question
     answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
     correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
     nextButton3.classList.remove('invisible');
@@ -208,7 +198,7 @@ function check_q4() {
     if (document.getElementById('q4a4').checked == true) {
         answerInput.innerHTML = RIGHT + CORRECT_Q4;
         correctCounter++;
-        document.getElementById('prize4').innerHTML = '<i class="fa-solid fa-star fa-beat">' + '</i>'
+        document.getElementById('prize4').innerHTML = '<i class="fa-regular fa-heart fa-beat">' + '</i>'
     }
 
     //If answer is not correct
@@ -218,6 +208,7 @@ function check_q4() {
         document.getElementById('prize4').innerHTML = '<i class="fa-solid fa-xmark"></i>'
     }
 
+    //update counters & move to next question
     answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
     correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
     nextButton4.classList.remove('invisible');
@@ -253,7 +244,7 @@ function check_q5() {
     if (document.getElementById('q5a4').checked == true) {
         answerInput.innerHTML = RIGHT + CORRECT_Q5;
         correctCounter++;
-        document.getElementById('prize5').innerHTML = '<i class="fa-solid fa-star fa-beat"></i>'
+        document.getElementById('prize5').innerHTML = '<i class="fa-regular fa-face-smile fa-beat"></i>'
     }
 
     //If answer is not correct
@@ -263,6 +254,7 @@ function check_q5() {
         document.getElementById('prize5').innerHTML = '<i class="fa-solid fa-xmark"></i>'
     }
 
+    //update counters & move to next question
     answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
     correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
     nextButton5.classList.remove('invisible');
@@ -271,25 +263,25 @@ function check_q5() {
 
 answerButton5.addEventListener('click', check_q5);
 
-//Move to next question by making the div visible
+//feedback & button showing it
 
 function feedback() {
     //CLASSIFICATION OF RESULTS:
 
 if (correctCounter <= 2) {
-    FEEDBACK.innerHTML = 'Englannin kieli vaatii sinulta vielä hieman harjoittelua'
+    FEEDBACK.innerHTML = 'Englannin kieli vaatii sinulta vielä hieman harjoittelua';
 }
 
 else if (correctCounter < 4) {
-    FEEDBACK.innerHTML = 'Teit hienoa työtä!'
+    FEEDBACK.innerHTML = 'Teit hienoa työtä, yli puolet meni oikein!';
 }
 
 else if (correctCounter < 5) {
-    FEEDBACK.innerHTML = 'Mahtavaa! Sait melkein kaikki oikein.'
+    FEEDBACK.innerHTML = 'Mahtavaa! Hieno suoritus, melkein kaikki oikein!';
 }
 
 else {
-    FEEDBACK.innerHTML = 'Huipputulos, kaikki oikein!'
+    FEEDBACK.innerHTML = 'Huipputulos, kaikki oikein!';
 }
     
 }
