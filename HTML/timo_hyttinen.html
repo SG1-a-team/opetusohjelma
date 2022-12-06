@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="/opetusohjelma/JS/script_timo_hyttinen.js" defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b0414a5597.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -67,22 +68,71 @@
     <div>
     <h5>Ympäristötieto-visa</h5>
     <article id="questionBox">
+        <button id="startButton">Aloita!</button>
         <p>Kysymys</p>
-        <span id="questionSpan"></span>
-        <input type="radio" name="question" id="answer1">
-        <label for="answer1"></label><br>
-        <input type="radio" name="question" id="answer2">
-        <label for="answer2" ></label><br>
-        <input type="radio" name="question" id="answer3">
-        <label for="answer3"></label><br>
-        <input type="radio" name="question" id="answer4">
-        <label for="answer4"></label><br>
+      <div id="divQuestion1" class="disappear">
+        <p id="question1">Mikä on viides planeetta Auringosta?</p>
+        <input type="radio" name="question1" class="answer1">
+        <label for="answer1" class="answer1">Mars</label><br>
+        <input type="radio" name="question1" class="answer2">
+        <label for="answer2" class="answer2">Neptunus</label><br>
+        <input type="radio" name="question1" class="answer3">
+        <label for="answer3" class="answer3">Jupiter</label><br>
+        <input type="radio" name="question1" class="answer4">
+        <label for="answer4" class="answer4">Merkurius</label><br>
+      </div>
+      <div id="divQuestion2" class="disappear">
+        <p id="question2">Ovatko sienet yleensä...</p>
+        <input type="radio" name="question1" class="answer1">
+        <label for="answer1" class="answer1">Kuluttajia</label><br>
+        <input type="radio" name="question1" class="answer2">
+        <label for="answer2" class="answer2">Tuottajia</label><br>
+        <input type="radio" name="question1" class="answer3">
+        <label for="answer3" class="answer3">Hajottajia</label><br>
+        <input type="radio" name="question1" class="answer4">
+        <label for="answer4" class="answer4">Rakentajia</label><br>
+      </div>
+      <div id="divQuestion3" class="disappear">
+        <p id="question3">Mikä näistä linnuista on Suomen kansallislintu?</p>
+        <input type="radio" name="question1" class="answer1">
+        <label for="answer1" class="answer1">Korppi</label><br>
+        <input type="radio" name="question1" class="answer2">
+        <label for="answer2" class="answer2">Laulujoutsen</label><br>
+        <input type="radio" name="question1" class="answer3">
+        <label for="answer3" class="answer3">Maakotka</label><br>
+        <input type="radio" name="question1" class="answer4">
+        <label for="answer4" class="answer4">Sinirinta</label><br>
+      </div>
+      <div id="divQuestion4" class="disappear">
+        <p id="question4">Miksi vuorovesi-ilmiö tapahtuu?</p>
+        <input type="radio" name="question1" class="answer1">
+        <label for="answer1" class="answer1" >Kuun ja Auringon painovoima ja Maan pyörimisliike aiheuttavat sen.</label><br>
+        <input type="radio" name="question1" class="answer2">
+        <label for="answer2" class="answer2" >Maan pyörimisliike aiheuttaa vuorovesi-ilmiön.</label><br>
+        <input type="radio" name="question1" class="answer3">
+        <label for="answer3" class="answer3">Mannerlaattojen liike aiheuttaa merten liikkeen.</label><br>
+        <input type="radio" name="question1" class="answer4">
+        <label for="answer4" class="answer4">Merivirtojen liike on niin suurta, että se aiheuttaa ilmiön.</label><br>
+      </div>
+      <div id="divQuestion5" class="disappear">
+        <p id="question5">Kuinka monta luuta ihmiskehossa on?</p>
+        <input type="radio" name="question1" class="answer1">
+        <label for="answer1" class="answer1">314</label><br>
+        <input type="radio" name="question1" class="answer2">
+        <label for="answer2" class="answer2">245</label><br>
+        <input type="radio" name="question1" class="answer3">
+        <label for="answer3" class="answer3">206</label><br>
+        <input type="radio" name="question1" class="answer4">
+        <label for="answer4" class="answer4">180</label><br>
+      </div>
     </article>
-    <button>Vastaa</button> <button>Seuraava</button> <button>Aloita alusta!</button>
-    <p>Vastaus oli</p> 
+    <button id="answerButton">Vastaa</button> 
+    <button id="nextButton">Seuraava</button> 
+    <button id="startOverButton">Aloita alusta!</button>
+    <p>Vastaus on</p> 
     <p id="answersResult"></p>
-    <div>Maskottidivi</div>
-    <div>Pisteenlaskudivi</div>
+    <div id="mascot">Maskottidivi</div>
+    <div id="points">Pisteenlaskudivi <i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i><i class="fa-solid fa-leaf"></i></div>
     </div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 m-0 px-1">
         <div class="container">

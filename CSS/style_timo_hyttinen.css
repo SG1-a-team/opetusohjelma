@@ -76,7 +76,9 @@ footer img {
     background-color: white;
 }
 
-
+.disappear {
+    display: none;
+}
 
 
 
