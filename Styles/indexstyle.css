@@ -51,18 +51,20 @@ p, a, footer{
     padding:5px;
 }
 
-footer {
+#footer {
+    display: flex;
     background-color: #FF995F;
     border: 5px solid #DA4F00;
     width: 100%;
-    margin: 0;   
-}
-footer .div .container {
-    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+
 }
 
-.nav-item, footer {
+.team {
+    display: flex;
     color: black;
+    align-items: flex-end;
 }
 
 .inside-html{
