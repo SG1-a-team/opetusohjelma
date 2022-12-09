@@ -11,6 +11,12 @@ body {
     font-weight: bold;
     }
 
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
 
 #navbar a:hover {
     color: #056888;
@@ -123,6 +129,12 @@ h3 {
 
 
 @media screen and (max-width: 991px){
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    } 
 
 footer img{
     display: none;
