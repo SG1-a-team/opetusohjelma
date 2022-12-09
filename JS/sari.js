@@ -8,27 +8,26 @@ const CORRECT_Q3 = '<li>' + 'So far so good = toistaiseksi menee hyvin' + '<li>'
 const CORRECT_Q4 = '<li>' + 'porsas = pig' + '<li>' + 'aita = fence' + '<li>' + 'tie = road' + '<li>' + 'haarukka = fork';
 const CORRECT_Q5 = '<li>' + 'happy = iloinen' + '<li>' + 'good = hyvä' + '<li>' + 'merry = iloinen' + '<li>' + 'lucky = onnekas';
 
-//Also variables & constants for some repeatable html elements
+//Also constants for some repeatable html elements
 
- var answersAmount = document.getElementById('answersAmount');
- var correctAmount = document.getElementById('correctAmount');
- var answerButton1 = document.getElementById('answer1');
- var answerButton2 = document.getElementById('answer2');
- var answerButton3 = document.getElementById('answer3');
- var answerButton4 = document.getElementById('answer4');
- var answerButton5 = document.getElementById('answer5');
- var nextButton1 = document.getElementById('next1');
- var nextButton2 = document.getElementById('next2');
- var nextButton3 = document.getElementById('next3');
- var nextButton4 = document.getElementById('next4');
- var nextButton5 = document.getElementById('next5');
-
+ const ANSWERS_AMOUNT = document.getElementById('answersAmount');
+ const CORRECT_AMOUNT = document.getElementById('correctAmount');
+ const ANSWER_BUTTON = document.getElementById('answer1');
+ const ANSWER_BUTTON2 = document.getElementById('answer2');
+ const ANSWER_BUTTON3 = document.getElementById('answer3');
+ const ANSWER_BUTTON4 = document.getElementById('answer4');
+ const ANSWER_BUTTON5 = document.getElementById('answer5');
+ const NEXT_BUTTON1 = document.getElementById('next1');
+ const NEXT_BUTTON2 = document.getElementById('next2');
+ const NEXT_BUTTON3 = document.getElementById('next3');
+ const NEXT_BUTTON4 = document.getElementById('next4');
+ const NEXT_BUTTON5 = document.getElementById('next5');
  const FEEDBACK = document.getElementById('feedback');
 
 //player alias
-
+let alias=""
 function print_alias() {
-    let alias = document.getElementById('name').value
+    alias = document.getElementById('name').value
     document.getElementById('name').value = "";
     document.getElementById('title').textContent = 'Tervetuloa tekemään enkkutestiä ' + alias + '!'
     document.getElementById('feedback').innerHTML = 'Kiva kun tulit tekemään testiä ' + alias + '! Jännittävää nähdä kuinka käy.'  
@@ -53,7 +52,7 @@ function check_q1() {
     
     //disable button, so answer cannot be changed
 
-    answerButton1.disabled = 'true';
+    ANSWER_BUTTON.disabled = 'true';
 
     //If answer is correct:
 
@@ -71,12 +70,12 @@ function check_q1() {
     }
 
     //update counters & move to next question
-    answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
-    correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
-    nextButton1.classList.remove('invisible');   
+    ANSWERS_AMOUNT.textContent = 'Vastatut kysymykset: ' + counter + '/5';
+    CORRECT_AMOUNT.textContent = 'Oikeat vastaukset: ' + correctCounter;
+    NEXT_BUTTON1.classList.remove('invisible');   
 }
 
-answerButton1.addEventListener('click', check_q1);
+ANSWER_BUTTON.addEventListener('click', check_q1);
 
 //Move to next question by making the div visible
 
@@ -85,7 +84,7 @@ function next_question1() {
     document.getElementById('quiz2').classList.remove('invisible');
 }
 
-nextButton1.addEventListener('click', next_question1);
+NEXT_BUTTON1.addEventListener('click', next_question1);
 
 // QUESTION 2
 
@@ -99,7 +98,7 @@ function check_q2() {
     
     //disable button, so answer cannot be changed
 
-    answerButton2.disabled = 'true';
+    ANSWER_BUTTON2.disabled = 'true';
 
     //If answer is correct:
 
@@ -117,13 +116,13 @@ function check_q2() {
     }
 
     //update counters & move to next question
-    answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
-    correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
-    nextButton2.classList.remove('invisible');
+    ANSWERS_AMOUNT.textContent = 'Vastatut kysymykset: ' + counter + '/5';
+    CORRECT_AMOUNT.textContent = 'Oikeat vastaukset: ' + correctCounter;
+    NEXT_BUTTON2.classList.remove('invisible');
     
 }
 
-answerButton2.addEventListener('click', check_q2);
+ANSWER_BUTTON2.addEventListener('click', check_q2);
 
 //Move to next question by making the div visible
 
@@ -132,7 +131,7 @@ function next_question2() {
     document.getElementById('quiz3').classList.remove('invisible');
 }
 
-nextButton2.addEventListener('click', next_question2);
+NEXT_BUTTON2.addEventListener('click', next_question2);
 
 // QUESTION 3
 
@@ -145,7 +144,7 @@ function check_q3() {
     
     //disable button, so answer cannot be changed
 
-    answerButton3.disabled = 'true';
+    ANSWER_BUTTON3.disabled = 'true';
 
     //If answer is correct:
 
@@ -163,13 +162,13 @@ function check_q3() {
     }
 
     //update counters & move to next question
-    answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
-    correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
-    nextButton3.classList.remove('invisible');
+    ANSWERS_AMOUNT.textContent = 'Vastatut kysymykset: ' + counter + '/5';
+    CORRECT_AMOUNT.textContent = 'Oikeat vastaukset: ' + correctCounter;
+    NEXT_BUTTON3.classList.remove('invisible');
     
 }
 
-answerButton3.addEventListener('click', check_q3);
+ANSWER_BUTTON3.addEventListener('click', check_q3);
 
 //Move to next question by making the div visible
 
@@ -178,7 +177,7 @@ function next_question3() {
     document.getElementById('quiz4').classList.remove('invisible');
 }
 
-nextButton3.addEventListener('click', next_question3);
+NEXT_BUTTON3.addEventListener('click', next_question3);
 
 // QUESTION 4
 
@@ -191,7 +190,7 @@ function check_q4() {
     
     //disable button, so answer cannot be changed
 
-    answerButton4.disabled = 'true';
+    ANSWER_BUTTON4.disabled = 'true';
 
     //If answer is correct:
 
@@ -209,13 +208,13 @@ function check_q4() {
     }
 
     //update counters & move to next question
-    answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
-    correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
-    nextButton4.classList.remove('invisible');
+    ANSWERS_AMOUNT.textContent = 'Vastatut kysymykset: ' + counter + '/5';
+    CORRECT_AMOUNT.textContent = 'Oikeat vastaukset: ' + correctCounter;
+    NEXT_BUTTON4.classList.remove('invisible');
     
 }
 
-answerButton4.addEventListener('click', check_q4);
+ANSWER_BUTTON4.addEventListener('click', check_q4);
 
 //Move to next question by making the div visible
 
@@ -224,7 +223,7 @@ function next_question4() {
     document.getElementById('quiz5').classList.remove('invisible');
 }
 
-nextButton4.addEventListener('click', next_question4);
+NEXT_BUTTON4.addEventListener('click', next_question4);
 
 //QUESTION 5
 
@@ -237,7 +236,7 @@ function check_q5() {
     
     //disable button, so answer cannot be changed
 
-    answerButton5.disabled = 'true';
+    ANSWER_BUTTON5.disabled = 'true';
 
     //If answer is correct:
 
@@ -255,36 +254,43 @@ function check_q5() {
     }
 
     //update counters & move to next question
-    answersAmount.textContent = 'Vastatut kysymykset: ' + counter + '/5';
-    correctAmount.textContent = 'Oikeat vastaukset: ' + correctCounter;
-    nextButton5.classList.remove('invisible');
+    ANSWERS_AMOUNT.textContent = 'Vastatut kysymykset: ' + counter + '/5';
+    CORRECT_AMOUNT.textContent = 'Oikeat vastaukset: ' + correctCounter;
+    NEXT_BUTTON5.classList.remove('invisible');
     
 }
 
-answerButton5.addEventListener('click', check_q5);
+ANSWER_BUTTON5.addEventListener('click', check_q5);
 
 //feedback & button showing it
 
 function feedback() {
     //CLASSIFICATION OF RESULTS:
 
+
 if (correctCounter <= 2) {
-    FEEDBACK.innerHTML = 'Englannin kieli vaatii sinulta vielä hieman harjoittelua';
+    FEEDBACK.innerHTML = 'Englannin kieli vaatii sinulta vielä hieman harjoittelua ' + alias;
 }
 
 else if (correctCounter < 4) {
-    FEEDBACK.innerHTML = 'Teit hienoa työtä, yli puolet meni oikein!';
+    FEEDBACK.innerHTML = 'Teit hienoa työtä ' + alias + ', yli puolet meni oikein!';
 }
 
 else if (correctCounter < 5) {
-    FEEDBACK.innerHTML = 'Mahtavaa! Hieno suoritus, melkein kaikki oikein!';
+    FEEDBACK.innerHTML = 'Mahtavaa ' + alias + '! Hieno suoritus, melkein kaikki oikein!';
 }
 
 else {
-    FEEDBACK.innerHTML = 'Huipputulos, kaikki oikein!';
+    FEEDBACK.innerHTML = 'Huipputulos ' + alias + ', kaikki oikein!';
 }
+
+//This will make only the results visible and hide question div:
+document.getElementById('quiz5').classList.add('invisible');
+document.getElementById('results').classList.remove('side');
+document.getElementById('results').classList.add('centerpiece');
+document.getElementById('start').innerHTML = '<center>' + 'Olet nyt suorittanut testin! Alla näet palautteen, miten englanti sujui' + '</center>';
     
 }
 
-nextButton5.addEventListener('click', feedback);
+NEXT_BUTTON5.addEventListener('click', feedback);
 
