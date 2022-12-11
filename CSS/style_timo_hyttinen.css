@@ -37,11 +37,6 @@ button{
     color: orange;
 }
 
-h5 {
-    font-family: 'Caveat Brush', cursive;
-    font-size: 2em;
-}
-
 p, a, footer{
     font-family: 'Livvic', sans-serif;
     font-size: 1.1em;
@@ -80,7 +75,10 @@ footer img {
     display: none;
 }
 
-
+h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2em;
+}
 
 @media screen and (max-width: 768px){
 

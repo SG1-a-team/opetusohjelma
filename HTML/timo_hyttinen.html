@@ -65,32 +65,40 @@
           <a class="navbar-brand" href="#" id="link7">Tietoja <i class="fa-regular fa-lightbulb" id="bulb"></i></a>
         </div>
       </nav>
-    <div>
-    <h5>Ympäristötieto-visa</h5>
-    <article id="questionBox">
-        <button id="startButton">Aloita!</button>
-        <p>Kysymys</p>
-      <div id="divQuestion" class="disappear">
-        <p id="question"></p>
-        <button id="answer1"></button>
-        <button id="answer2"></button>
-        <button id="answer3"></button>
-        <button id="answer4"></button>
+    <div class="container text-center">
+      <div class="row">
+        <h5>Ympäristötieto-visa</h5>
       </div>
-    </article>
-    <br>
-    <button id="nextButton">Seuraava</button> 
-    <button id="soButton">Aloita alusta!</button>
-    <p id="answerP" class="disappear">Vastaus on</p> 
-    <p id="answersResult"></p>
-    <div id="mascot">Maskottidivi</div>
-    <div id="points">
-      <p id="correct"></p>
-      <p id="counter"></p>
-    </div>
+      <div id="row">
+        <div id="col">
+          <button id="startButton">Aloita!</button>
+          <p>Kysymys</p>
+          <div id="divQuestion" class="disappear">
+            <p id="question"></p>
+            <button id="answer1"></button>
+            <button id="answer2"></button>
+            <button id="answer3"></button>
+            <button id="answer4"></button>
+          </div>
+        </div>
+        <div id="col mascot"> Maskottidivi
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button id="nextButton">Seuraava</button> 
+          <button id="soButton">Aloita alusta!</button>
+          <p id="answerP" class="disappear">Vastaus on</p> 
+          <p id="answersResult"></p>
+        </div>
+        <div id="col points">
+          <p id="correct"></p>
+          <p id="counter"></p>
+        </div>
+      </div>
     </div>
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 m-0 px-1">
-        <div class="container">
+      <div class="container">
         <ul class="nav col-md-0 justify-content-space-between">
           <li class="col-md-6 mb-0 "><img src="/opetusohjelma/Images/oululogo.png" alt=""></li>
           <li class="nav-item"><b>SG1-A-Team:</b></li>
@@ -100,8 +108,8 @@
           <li class="nav-item">Teemu</li>
           <li class="nav-item">Tommi</li>
         </ul>
-        </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
