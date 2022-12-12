@@ -74,10 +74,18 @@ answerButton1.addEventListener("click", function() {
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("correct").innerHTML = rightAnswerCounter;
 		document.getElementById("answersResult").innerHTML = " oikein.";
+		answerButton1.disabled = true;
+		answerButton2.disabled = true;
+		answerButton3.disabled = true;
+		answerButton4.disabled = true;
 	} else {
 		counter = counter + 1;
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("answersResult").innerHTML = " väärin.";
+		answerButton1.disabled = true;
+		answerButton2.disabled = true;
+		answerButton3.disabled = true;
+		answerButton4.disabled = true;
 	}
 	}
 )
@@ -88,11 +96,19 @@ answerButton2.addEventListener("click", function() {
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("correct").innerHTML = rightAnswerCounter;
 		document.getElementById("answersResult").innerHTML = " oikein.";
+		answerButton1.disabled = true;
+		answerButton2.disabled = true;
+		answerButton3.disabled = true;
+		answerButton4.disabled = true;
 	}
 	else {
 		counter = counter + 1;
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("answersResult").innerHTML = " väärin.";
+		answerButton1.disabled = true;
+		answerButton2.disabled = true;
+		answerButton3.disabled = true;
+		answerButton4.disabled = true;
 	}
 	}
 )
@@ -103,10 +119,18 @@ answerButton3.addEventListener("click", function() {
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("correct").innerHTML = rightAnswerCounter;
 		document.getElementById("answersResult").innerHTML = " oikein.";
+		answerButton1.disabled = true;
+		answerButton2.disabled = true;
+		answerButton3.disabled = true;
+		answerButton4.disabled = true;
 	} else {
 		counter = counter + 1;
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("answersResult").innerHTML = " väärin.";
+		answerButton1.disabled = true;
+		answerButton2.disabled = true;
+		answerButton3.disabled = true;
+		answerButton4.disabled = true;
 	}
 	}
 )
@@ -117,11 +141,19 @@ answerButton4.addEventListener("click", function() {
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("correct").innerHTML = rightAnswerCounter;
 		document.getElementById("answersResult").innerHTML = " oikein.";
+		answerButton1.disabled = true;
+		answerButton2.disabled = true;
+		answerButton3.disabled = true;
+		answerButton4.disabled = true;
 	}
 	else {
 		counter = counter + 1;
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("answersResult").innerHTML = " väärin.";
+		answerButton1.disabled = true;
+		answerButton2.disabled = true;
+		answerButton3.disabled = true;
+		answerButton4.disabled = true;
 	}
 	}
 )
@@ -135,6 +167,10 @@ nextButton.addEventListener("click", function(){
 	answerButton2.textContent = questions[currentQuestion].answerB;
 	answerButton3.textContent = questions[currentQuestion].answerC;
 	answerButton4.textContent = questions[currentQuestion].answerD;
+	answerButton1.disabled = false;
+	answerButton2.disabled = false;
+	answerButton3.disabled = false;
+	answerButton4.disabled = false;
 })
 
 /* function nextQuestion()  */
@@ -146,11 +182,16 @@ soButton.addEventListener("click", function(){
 	document.getElementById("nextButton").classList.add("disappear");
 	document.getElementById("soButton").classList.add("disappear");
 	document.getElementById("answerP").classList.add("disappear");
+	document.getElementById("pointDiv").classList.add("disappear");
 	document.getElementById("answersResult").innerHTML = "";
 	counter = 0;
 	rightAnswerCounter = 0;
 	document.getElementById("counter").innerHTML = "";
 	document.getElementById("correct").innerHTML = "";
+	answerButton1.disabled = false;
+	answerButton2.disabled = false;
+	answerButton3.disabled = false;
+	answerButton4.disabled = false;
 })
 
 /* document.getElementById("counter").innerHTML = counter;

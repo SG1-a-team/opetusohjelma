@@ -76,6 +76,11 @@ body {
 button {
     color: #0B485D;
     background-color: #1293BE;
+    padding: 15px;
+}
+#startButton {
+    position: absolute;
+    top: 450px;
 }
 button:hover {
     color: #943D0C;
@@ -118,8 +123,14 @@ h5 {
     margin-top: 10px;
     color: #0B485D;
 }
-
-
+#mascot {
+    justify-content: center;
+}
+#mascotPicture {
+    margin-top: 75px;
+    height: 200px;
+    width: auto;
+}
 @media screen and (max-width: 768px){
 
 footer img{
