@@ -73,7 +73,7 @@ answerButton1.addEventListener("click", function() {
 		rightAnswerCounter = rightAnswerCounter + 1;
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("correct").innerHTML = rightAnswerCounter;
-		document.getElementById("answersResult").innerHTML = " oikein.";
+		document.getElementById("answersResult").innerHTML = " oikein!";
 		answerButton1.disabled = true;
 		answerButton2.disabled = true;
 		answerButton3.disabled = true;
@@ -95,7 +95,7 @@ answerButton2.addEventListener("click", function() {
 		rightAnswerCounter = rightAnswerCounter + 1;
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("correct").innerHTML = rightAnswerCounter;
-		document.getElementById("answersResult").innerHTML = " oikein.";
+		document.getElementById("answersResult").innerHTML = " oikein!";
 		answerButton1.disabled = true;
 		answerButton2.disabled = true;
 		answerButton3.disabled = true;
@@ -118,7 +118,7 @@ answerButton3.addEventListener("click", function() {
 		rightAnswerCounter = rightAnswerCounter + 1;
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("correct").innerHTML = rightAnswerCounter;
-		document.getElementById("answersResult").innerHTML = " oikein.";
+		document.getElementById("answersResult").innerHTML = " oikein!";
 		answerButton1.disabled = true;
 		answerButton2.disabled = true;
 		answerButton3.disabled = true;
@@ -140,7 +140,7 @@ answerButton4.addEventListener("click", function() {
 		rightAnswerCounter = rightAnswerCounter + 1;
 		document.getElementById("counter").innerHTML = counter;
 		document.getElementById("correct").innerHTML = rightAnswerCounter;
-		document.getElementById("answersResult").innerHTML = " oikein.";
+		document.getElementById("answersResult").innerHTML = " oikein!";
 		answerButton1.disabled = true;
 		answerButton2.disabled = true;
 		answerButton3.disabled = true;
