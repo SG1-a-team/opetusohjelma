@@ -105,16 +105,7 @@ td {
     max-width:200px;
 }
 
-#footer {
-    display: flex;
-    background-color: #FF995F;
-    border: 5px solid #DA4F00;
-    width: 100%;
-    margin: 0;
-    justify-content: space-between;
-    margin-top: 10px;
 
-}
 
 /* COMMON CSS */
 
@@ -166,6 +157,17 @@ h5 {
     font-size: 2em;
 }
 
+#footer {
+    display: flex;
+    background-color: #FF995F;
+    border: 5px solid #DA4F00;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
 p, a, footer{
     font-family: 'Livvic', sans-serif;
     font-size: 1.1em;
@@ -191,17 +193,28 @@ footer img {
 }
 
 
+@media screen and (max-width: 991px) {
 
-
-
-@media screen and (max-width: 768px) {
-
-    #content {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-        column-gap: 0px;
-
+    #carouselCaptions {
+        display: none;
     }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    } 
+
+footer img{
+    display: none;
+}
+
+#content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 0px;
+
+}
 
     .quiz1, .quiz2, .quiz3, .quiz4, .quiz5 {
         grid-row: 2;
