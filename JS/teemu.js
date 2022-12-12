@@ -1,3 +1,4 @@
+//  tässä koodissa on käytettynyt apuna seuraavaa sivustao https://simplestepscode.com/javascript-quiz-tutorial/
 //Here we have the navbar JS
 let link2 = document.getElementById('link2');
 let otter = document.getElementById('otter');
@@ -108,45 +109,45 @@ var myQuestions = [
 	{
 		question: "Missä Pandat nukkuvat?",
 		answers: {
-			a: 'Kuussa',
-			b: 'Sängyssä',
-			c: 'Missä vaan'
+			a: 'Kuussa ',
+			b: 'Sängyssä ',
+			c: 'Missä vaan '
 		},
 		correctAnswer: 'c'
 	},
     {
 		question: "Miten seeprat juttelevat toisilleen?",
 		answers: {
-			a: 'Korvia liikuttelemalla',
-			b: 'Puhumalla',
-			c: 'Murjottamallla'
+			a: 'Korvia liikuttelemalla ',
+			b: 'Puhumalla ',
+			c: 'Murjottamallla '
 		},
 		correctAnswer: 'a'
 	},
     {
 		question: "Kuinka monta tuntia leijonauros nukkuu päivässä?",
 		answers: {
-			a: 'Liika monta',
-			b: '20 tuntia',
-			c: 'Niin monta kun naarasleijona antaa'
+			a: 'Liika monta ',
+			b: '20 tuntia ',
+			c: 'Niin monta kun naarasleijona antaa '
 		},
 		correctAnswer: 'b'
 	},
     {
 		question: "Minkävärinen on Elefantti?",
 		answers: {
-			a: 'Vihreä',
-			b: 'Harmaa',
-			c: 'Violetti'
+			a: 'Vihreä ',
+			b: 'Harmaa ',
+			c: 'Violetti '
 		},
 		correctAnswer: 'b'
 	},
 	{
 		question: "Mitä tulee kun yhdistää lohen ja käärmeen?",
 		answers: {
-			a: 'Hassu soppa',
-			b: 'Jonkinsortin avaruusolio',
-			c: 'Lohikäärme'
+			a: 'Hassu soppa ',
+			b: 'Jonkinsortin avaruusolio ',
+			c: 'Lohikäärme '
 		},
 		correctAnswer: 'c'
 	}
