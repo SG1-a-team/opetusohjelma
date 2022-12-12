@@ -1,0 +1,215 @@
+
+body {
+    margin: 0;
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2em;
+    height: 98vh;
+}
+
+#navbar {
+    border: 5px solid #FFC25F;
+    background-color: #1293BE;
+    font-weight: bold;
+    }
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+
+#navbar a:hover {
+    color: #056888;
+}
+.carousel .carousel-item {
+    height: 120px;
+    
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 120px;
+  }
+  .carousel-caption{
+    
+    color: black;
+    background-color: #1293BE;
+    border: 5px solid #FFC25F;
+    position: absolute;
+    right: 30%;
+    top: 0.25rem;
+    bottom: 0.25rem;
+    left: 30%;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+h6 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.5em;
+    color: #056888;
+}
+
+p, a, footer{
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.1em;
+}
+
+.nav-item {
+    padding:5px;
+}
+
+#footer {
+    display: flex;
+    background-color: #1293BE;
+    border: 5px solid #FFC25F;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+.team {
+    display: flex;
+    color: black;
+    align-items: flex-end;
+}
+
+li.footer-item {
+    padding:3px;
+}
+
+footer img {
+    max-height: 100px;
+    background-color: white;
+}
+
+/* Omat tyylit: */
+.disappear  {
+    display: none !important;
+}
+body {
+    background-color: #bad8e2;
+}
+button {
+    color: #0B485D;
+    background-color: #1293BE;
+    padding: 15px;
+}
+#startButton {
+    position: absolute;
+    top: 350px;
+}
+button:hover {
+    color: #943D0C;
+    background-color: #FFC25F;
+}
+#divQuestion>button:hover {
+    color: #943D0C;
+    background-color: #FFC25F;
+}
+#divQuestion{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid #0B485D;
+    border-radius: 18px;
+}
+#divQuestion>button {
+    color: #0B485D;
+    background-color: #1293BE;
+    margin: 15px;
+    padding: 10px;
+}
+#answerBox, #points {
+    margin-top: 10px;
+}
+answerP {
+    margin-bottom: 0px;
+}
+#points {
+    justify-content: center;
+    display: flex;
+    flex: auto;
+}
+#points p {
+    padding: 0px 5px 0px 5px;
+    font-size: 2em;
+    color: #0B485D;
+}
+h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #0B485D;
+}
+#mascot {
+    justify-content: center;
+}
+#mascotPicture {
+    margin-top: 75px;
+    height: 200px;
+    width: auto;
+}
+@media screen and (max-width: 991px){
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    } 
+
+footer img{
+    display: none;
+}
+
+#carouselCaptions {
+    display: none;
+}
+    
+
+    .col-2{
+        display: none;
+    }
+    .col-10{
+        grid-column: 1/3;
+    
+    }
+.firstPage{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    border: 5px solid #DA4F00;
+    height: 90%;
+    padding: 10px;
+}
+
+#content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: fit-content;
+
+}
+
+.quiz1, .quiz2, .quiz3, .quiz4, .quiz5 {
+    grid-row: 2;
+    grid-column: 1/2;
+}
+
+.side {
+    grid-row: 3;
+    grid-column: 1/2;
+}
+/* omat muotoilut */
+#startButton {
+    position: absolute;
+    top: 250px;
+}
+}
