@@ -30,6 +30,7 @@ function firstQuestion(){
        
     }else {
        document.getElementById("tulos1").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Helsinki"
+       document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }     
     button1.disabled = true;
     document.querySelector(".seuraava1").classList.remove("piilotettu");
@@ -50,6 +51,7 @@ function secondQuestion(){
        
     }else {
        document.getElementById("tulos2").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Tanska"
+       document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }
     button2.disabled = true;
     document.querySelector(".seuraava2").classList.remove("piilotettu"); 
@@ -70,6 +72,7 @@ function thirdQuestion(){
        
     }else {
        document.getElementById("tulos3").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Pariisi"
+       document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }    
     button3.disabled = true;
     document.querySelector(".seuraava3").classList.remove("piilotettu");
@@ -90,6 +93,7 @@ function fourthQuestion(){
        
     }else {
        document.getElementById("tulos4").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Mount Everest"
+       document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }  
     button4.disabled = true;
     document.querySelector(".seuraava4").classList.remove("piilotettu");   
@@ -111,6 +115,7 @@ function fifthQuestion(){
        
     }else {
        document.getElementById("tulos5").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Ruotsi"
+       document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }    
     button5.disabled = true;
 };
