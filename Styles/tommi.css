@@ -46,6 +46,11 @@ body {
     text-align: center;
 }
 
+.carousel-caption p{
+    font-size: 1em;
+    color: black;
+}
+
 
 h5 {
     font-family: 'Caveat Brush', cursive;
@@ -162,7 +167,7 @@ h2 {
 
 .scoreboard {
     display: flex;
-    font-size: 1.5em;
+    font-size: 1em;
     border: 3px solid #03465d;
     border-radius: 5px;
     grid-column: 1/2;
@@ -182,21 +187,6 @@ h2 {
     padding: 10px;
     
 }
-/* .kuvat{
-    display: flex;
-    flex-direction: column;
-    grid-column: 2/3;
-    grid-row: 3/7;
-    border: 3px solid #03465d;
-    background-color: #98B5C0;
-    padding: 20px 20px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-.kuvat img{
-    width: 80%;
-} */
 
 .seuraava1, .seuraava2, .seuraava3, .seuraava4, .aloita_peli{
     display: none;
@@ -206,7 +196,7 @@ h2 {
 .game{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr auto;
 }
 .quiz1, .quiz2, .quiz3, .quiz4, .quiz5, .side{
     grid-column: 1/2;
