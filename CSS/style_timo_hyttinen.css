@@ -7,8 +7,8 @@ body {
 }
 
 #navbar {
-    border: 5px solid #DA4F00;
-    background-color: #FF995F;
+    border: 5px solid #FFC25F;
+    background-color: #1293BE;
     font-weight: bold;
     }
 
@@ -48,10 +48,6 @@ body {
     text-align: center;
 }
 
-button{
-    color: orange;
-}
-
 h5 {
     font-family: 'Caveat Brush', cursive;
     font-size: 2em;
@@ -68,8 +64,8 @@ p, a, footer{
 
 #footer {
     display: flex;
-    background-color: #FF995F;
-    border: 5px solid #DA4F00;
+    background-color: #1293BE;
+    border: 5px solid #FFC25F;
     width: 100%;
     margin: 0;
     justify-content: space-between;
@@ -109,11 +105,11 @@ button {
 }
 button:hover {
     color: #943D0C;
-    background-color: #FF995F;
+    background-color: #FFC25F;
 }
 #divQuestion>button:hover {
     color: #943D0C;
-    background-color: #FF995F;
+    background-color: #FFC25F;
 }
 #divQuestion{
     display: flex;
