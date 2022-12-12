@@ -1,7 +1,9 @@
 body {
     background-color: #056888;
-    padding: 5px;
-    margin: 0px;
+    margin: 0;
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2em;
+    height: 98vh;
 }
 #navbar {
     border: 4px solid #03465d;
