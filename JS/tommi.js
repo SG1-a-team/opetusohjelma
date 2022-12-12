@@ -25,7 +25,7 @@ function firstQuestion(){
     let valinta = document.getElementById("vastaus3");
     if(valinta.checked == true){
         scoreboard = scoreboard + 1
-        document.getElementById("score").innerHTML = scoreboard +  "/" + "5"
+        document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
         document.getElementById("tulos1").innerHTML = "Vastauksesi on oikein"
        
     }else {
@@ -45,7 +45,7 @@ function secondQuestion(){
     let valinta = document.getElementById("vastaus5");
     if(valinta.checked == true){
         scoreboard = scoreboard + 1
-        document.getElementById("score").innerHTML = scoreboard +  "/" + "5"
+        document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
         document.getElementById("tulos2").innerHTML = "Vastauksesi on oikein"
        
     }else {
@@ -65,7 +65,7 @@ function thirdQuestion(){
     let valinta = document.getElementById("vastaus10");
     if(valinta.checked == true){
         scoreboard = scoreboard + 1
-        document.getElementById("score").innerHTML = scoreboard +  "/" + "5"
+        document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
         document.getElementById("tulos3").innerHTML = "Vastauksesi on oikein"
        
     }else {
@@ -85,7 +85,7 @@ function fourthQuestion(){
     let valinta = document.getElementById("vastaus15");
     if(valinta.checked == true){
         scoreboard = scoreboard + 1
-        document.getElementById("score").innerHTML = scoreboard +  "/" + "5"
+        document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
         document.getElementById("tulos4").innerHTML = "Vastauksesi on oikein"
        
     }else {
@@ -106,7 +106,7 @@ function fifthQuestion(){
     let valinta = document.getElementById("vastaus18");
     if(valinta.checked == true){
         scoreboard = scoreboard + 1;
-        document.getElementById("score").innerHTML = scoreboard +  "/" + "5"
+        document.getElementById("score").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
         document.getElementById("tulos5").innerHTML = "Vastauksesi on oikein";
        
     }else {
@@ -115,8 +115,8 @@ function fifthQuestion(){
     button5.disabled = true;
 };
 
-document.getElementById("score").innerHTML = scoreboard +  "/" + "5"
-document.getElementById("score_teksti").innerHTML = "Tuloksesi on:"
+document.getElementById("score").innerHTML = "Täällä näet tuloksesi";
+
 
 
 
