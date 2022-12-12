@@ -267,7 +267,6 @@ ANSWER_BUTTON5.addEventListener('click', check_q5);
 function feedback() {
     //CLASSIFICATION OF RESULTS:
 
-
 if (correctCounter <= 2) {
     FEEDBACK.innerHTML = 'Englannin kieli vaatii sinulta vielä hieman harjoittelua ' + alias;
 }

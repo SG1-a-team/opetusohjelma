@@ -1,4 +1,4 @@
-body {
+ body {
     background-color: #ffC25F;
 }
 
@@ -9,6 +9,7 @@ body {
     gap: 10px;
     font-family: 'livvic', sans-serif;
     font-size: 1em;
+    margin-bottom: 10px;
 }
 
 .invisible {
@@ -103,9 +104,7 @@ td {
 
 .side img, .centerpiece img {
     max-width:200px;
-}
-
-
+} 
 
 /* COMMON CSS */
 
@@ -209,7 +208,7 @@ footer img{
     display: none;
 }
 
-#content {
+ #content {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     column-gap: 0px;
@@ -235,6 +234,9 @@ footer img{
     background-color: #FFE7C0;
     text-align: center;
     min-width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
-}
+    
+} 
