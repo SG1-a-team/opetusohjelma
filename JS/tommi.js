@@ -116,6 +116,7 @@ function fifthQuestion(){
 };
 
 document.getElementById("score").innerHTML = scoreboard +  "/" + "5"
+document.getElementById("score_teksti").innerHTML = "Tuloksesi on:"
 
 
 
