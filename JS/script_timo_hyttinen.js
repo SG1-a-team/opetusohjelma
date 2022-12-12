@@ -55,7 +55,10 @@ startButton.addEventListener("click", function(){
 	document.getElementById("answerP").classList.remove("disappear");
 	document.getElementById("nextButton").classList.remove("disappear");
 	document.getElementById("soButton").classList.remove("disappear");
+	document.getElementById("pointDiv").classList.remove("disappear");
 	document.getElementById("startButton").classList.add("disappear");
+	document.getElementById("counter").innerHTML = counter;
+	document.getElementById("correct").innerHTML = rightAnswerCounter;
 	questionDiv.textContent = questions[currentQuestion].question;
 	answerButton1.textContent = questions[currentQuestion].answerA;
 	answerButton2.textContent = questions[currentQuestion].answerB;

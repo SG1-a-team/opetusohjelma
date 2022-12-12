@@ -66,11 +66,9 @@
         </div>
       </nav>
     <div class="container text-center">
-      <div class="row">
-        <h5>Ympäristötieto-visa</h5>
-      </div>
-      <div id="row">
-        <div id="col">
+      <h5>Ympäristötieto-visa</h5>
+      <div class="row row-cols-2">
+        <div class="col" id="questionBox">
           <button id="startButton">Aloita!</button>
           <div id="divQuestion" class="disappear">
             <p>Kysymys</p>
@@ -81,18 +79,17 @@
             <button id="answer4"></button>
           </div>
         </div>
-        <div id="col mascot"> Maskottidivi
+        <div id="mascot" class="col borderBox"> Maskottidivi
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
+        <div class="col" id="answerBox">
           <button id="nextButton" class="disappear">Seuraava</button> 
           <button id="soButton" class="disappear">Aloita alusta!</button>
           <p id="answerP" class="disappear">Vastaus on</p> 
           <p id="answersResult"></p>
         </div>
-        <div id="col points">
+        <div id="points" class="col">
           <p id="correct"></p>
+          <p id="pointDiv" class="disappear">/</p>
           <p id="counter"></p>
         </div>
       </div>
