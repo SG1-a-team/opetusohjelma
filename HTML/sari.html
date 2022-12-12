@@ -89,20 +89,145 @@
       </div>
     </nav>
     <!-- Navbar bootstrap end here -->
-
-      <div class="firstPage">
-          <div class="col-2">
-            <img src = "./images/placeholder.png" width = "250px">
-          </div>
-          <div class="col-10">
-
-            <h3>Tervetuloa pelisivuille!</h3>
-            <p>Näiltä sivuilta löydät osaamistasi testaavia eri aihealueiden pelejä. Voit sopia yhdessä opettajan kanssa, mitkä pelit sopivat sinulle tehtäviksi. Tietysti saat myös aivan vapaasti valita pelit oman mielenkiintosi mukaan!</p>
-
-              <p>Tämä sivun pelit ovat pääosin tietovisoja, joissa on viisi kysymystä ja kuhunkin yksi oikea vastaus. Hauskoja pelihetkiä!</p>
-          </div>
-        
+    <div id = "content">
+      <div class ="text" id ="start"><h2 id ='title'>Tervetuloa tekemään enkkutestiä!</h2>
+      
+          <p><br>Syötä ihan aluksi nimi tai nimimerkki: <input type=text id ="name" maxlength="20"></input>  <button type="button" id="alias" class="btn btn-light btn-sm">Lähetä</button></p>
+      <p>Tällä sivulla on viisi kysymystä englannin kieleen liittyen. Kysymykset koskevat sanastoa ja sanontoja.
+      Valitse vastauksesi huolellisesti, sillä vastausta ei voi vaihtaa jälkikäteen. Jokaiseen kysymykseen on yksi oikea vastaus. Sivulla on myös tulostaulu, josta näet moneenko kysymykseen olet
+  vastannut ja kuinka moneen olet vastannut oikein.</p> <p>Onnea testiin!</p>
+  </div>
+      <div class = "quiz1" id = "quiz1"><h2>Kysymys 1</h2><p>Mikä on "ananas" englanniksi?</p> 
+          
+          <div>
+      
+          <input type="radio" name="choice1" id="q1a1" class="check" checked>
+          <label for="q1a1"> pear </label>
       </div>
+      <div>
+          <input type="radio" name="choice1" id="q1a2" class="check">
+          <label for="q1a2"> pineapple </label>
+      </div>
+      <div>
+          <input type="radio" name="choice1" id="q1a3" class="check">
+          <label for="q1a3"> cherry </label>
+      </div>
+      <div>
+          <input type="radio" name="choice1" id="q1a4" class="check">
+          <label for="q1a4"> grape </label><br><br>
+  
+          <p><button type="button" class="btn" id="answer1">Vastaa</button> <button type="button" class="btn invisible" id="next1">Seuraava kysymys</button>   </p>
+          <p id ="printResult1"></p>
+      
+      </div></div>
+      <div class = "quiz2 invisible" id = "quiz2"><h2>Kysymys 2</h2><p>Jatka lausetta: "You should not go outside, weather forecast said there is going to be..." </p>
+          
+          <div>
+          <input type="radio" name="choice2" id="q2a1" checked>
+          <label for="q2a1"> ...thunderstorm</label>
+      </div>
+      <div>
+          <input type="radio" name="choice2" id="q2a2">
+          <label for="q2a2"> ...waterfall</label>
+      </div>
+      <div>
+          <input type="radio" name="choice2" id="q2a3">
+          <label for="q2a3"> ...surface</label>
+      </div>
+      <div>
+          <input type="radio" name="choice2" id="q2a4">
+          <label for="q2a4"> ...blackout </label><br><br>
+  
+          <p><button type="button" class="btn" id="answer2">Vastaa</button> <button type="button" class="btn invisible" id="next2">Seuraava kysymys</button> </p>
+          <p id ="printResult2"></p>
+      
+      </div></div>
+      <div class = "quiz3 invisible" id = "quiz3"><h2>Kysymys 3</h2><p>Kuinka sanot englanniksi "Parempi myöhään kun ei milloinkaan"?</p> 
+          
+          <div>
+          <input type="radio" name="choice3" id="q3a1" checked>
+          <label for="q3a1"> So far so good</label>
+      </div>
+      <div>
+          <input type="radio" name="choice3" id="q3a2">
+          <label for="q3a2"> Better late than never</label>
+      </div>
+      <div>
+          <input type="radio" name="choice3" id="q3a3">
+          <label for="q3a3"> To make matters worse</label>
+      </div>
+      <div>
+          <input type="radio" name="choice3" id="q3a4">
+          <label for="q3a4"> That's the last straw</label><br><br>
+  
+          <p><button type="button" class="btn" id="answer3">Vastaa</button> <button type="button" class="btn invisible" id="next3">Seuraava kysymys</button> </p>
+          <p id ="printResult3"></p>
+      
+      </div></div>
+      <div class = "quiz4 invisible" id = "quiz4"><h2>Kysymys 4</h2><p>Mitä tarkoittaa englannin sana fork?</p>  
+          
+          <div>
+          <input type="radio" name="choice4" id="q4a1" checked>
+          <label for="q4a1"> porsas </label>
+      </div>
+      <div>
+          <input type="radio" name="choice4" id="q4a2">
+          <label for="q4a2"> aita</label>
+      </div>
+      <div>
+          <input type="radio" name="choice4" id="q4a3">
+          <label for="q4a3"> tie </label>
+      </div>
+      <div>
+          <input type="radio" name="choice4" id="q4a4">
+          <label for="q4a4"> haarukka</label><br><br>
+  
+          <p><button type="button" class="btn" id="answer4">Vastaa</button> <button type="button" class="btn invisible" id="next4">Seuraava kysymys</button> </p>
+          <p id ="printResult4"></p>
+      
+      </div></div>
+      <div class = "quiz5 invisible" id = "quiz5"><h2>Kysymys 5</h2><p>Mikä on "onnekas" englanniksi?</p> 
+          
+          <div>
+          <input type="radio" name="choice5" id="q5a1" checked>
+          <label for="q5a1"> happy</label>
+      </div>
+      <div>
+          <input type="radio" name="choice5" id="q5a2">
+          <label for="q5a2"> good</label>
+      </div>
+      <div>
+          <input type="radio" name="choice5" id="q5a3">
+          <label for="q5a3"> merry</label>
+      </div>
+      <div>
+          <input type="radio" name="choice5" id="q5a4">
+          <label for="q5a4"> lucky</label><br><br>
+  
+          <p><button type="button" class="btn" id="answer5">Vastaa</button> <button type="button" class="btn invisible" id="next5">Palaute</button> </p>
+          <p id ="printResult5"></p>
+      
+      </div>
+      </div>
+      <div class = "side" id ="results"> <h3>Tulokset</h3>
+          <p id="answersAmount">Vastatut kysymykset: 0/5</p>
+          <p id="correctAmount">Oikeat vastaukset: 0</p>
+      <h3>Palkinnot</h3>
+        <div class = prizes><table class = prizetable><tr>
+      <td id = "prize1">1</td>
+      <td id = "prize2">2</td>
+      <td id = "prize3">3</td>
+      <td id = "prize4">4</td>
+      <td id = "prize5">5</td>
+      </tr></table></div><br><br>
+  
+      <div class = feedback><p id ="feedback">Hauskaa nähdä miten testi menee!</p></div>
+      <img src="/opetusohjelma/pics/crow2.PNG">
+      </div>
+  
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+      <script src="/opetusohjelma/JS/sari.js"></script>
     <!-- footer starts here -->
     <footer class="d-flex flex-wrap py-1 m-0 px-1" id="footer">
       
