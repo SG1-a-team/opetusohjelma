@@ -46,6 +46,10 @@ body {
     text-align: center;
 }
 
+.carousel-caption p{
+    font-size: 1em;
+}
+
 
 h5 {
     font-family: 'Caveat Brush', cursive;
