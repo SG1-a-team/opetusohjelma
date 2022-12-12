@@ -9,7 +9,11 @@ body {
     font-weight: bold;
     margin-bottom: 10px ;
     }
-
+.container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}  
 
 #navbar a:hover {
     color: #056888;
@@ -58,22 +62,24 @@ p, a, footer{
     padding:5px;
 }
 
-footer {
-    border: 3px solid #03465d;
+#footer {
+    display: flex;
     background-color: #98B5C0;
+    border: 5px solid #03465d;
     width: 100%;
-    margin: 0;   
-}
-footer .div .container {
-    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+
 }
 
-.nav-item, footer {
+.team {
+    display: flex;
     color: black;
+    align-items: flex-end;
 }
 
-.inside-html{
-    border:5px solid #DA4F00"
+li.footer-item {
+    padding:3px;
 }
 
 footer img {
@@ -173,7 +179,7 @@ h2 {
     display: none;
 }
 
-@media screen and (max-width: 912px){
+@media screen and (max-width: 991px){
 .game{
     display: grid;
     grid-template-columns: 1fr;
@@ -183,7 +189,11 @@ h2 {
     grid-column: 1/2;
     grid-row: 1/2;
 }
-
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
 
 .scoreboard{
     grid-column: 1/2;
