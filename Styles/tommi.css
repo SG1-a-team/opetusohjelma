@@ -15,7 +15,7 @@ body {
     color: #056888;
 }
 .carousel .carousel-item {
-    height: 200px;
+    height: 120px;
     
   }
   
@@ -24,7 +24,7 @@ body {
       object-fit: cover;
       top: 0;
       left: 0;
-      min-height: 200px;
+      min-height: 120px;
   }
   .carousel-caption{
     
@@ -32,10 +32,11 @@ body {
     background-color: white;
     position: absolute;
     right: 30%;
-    bottom: 2.5rem;
+    top: 0.25rem;
+    bottom: 0.25rem;
     left: 30%;
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
     text-align: center;
 }
 

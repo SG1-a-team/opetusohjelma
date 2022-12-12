@@ -1,25 +1,21 @@
-
 body {
     margin: 0;
     font-family: 'Livvic', sans-serif;
     font-size: 1.2em;
 }
-
 #navbar {
     border: 5px solid #DA4F00;
-    background-color: #FF995F;
+    background-color: #ffa30f;
     font-weight: bold;
     }
-
-.container-fluid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}    
-
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
 
 #navbar a:hover {
-    color: #056888;
+    color: #499db9;
 }
 .carousel .carousel-item {
     height: 120px;
@@ -67,7 +63,7 @@ p, a, footer{
 
 #footer {
     display: flex;
-    background-color: #FF995F;
+    background-color: #ffa30f;
     border: 5px solid #DA4F00;
     width: 100%;
     margin: 0;
@@ -91,8 +87,6 @@ footer img {
 }
 
 
-/* first content index */
-
 .firstPage{
     display: grid;
     grid-template-columns: 2fr 10fr;
@@ -112,13 +106,7 @@ footer img {
     align-content: center;
 }
  
-.col-10 {
-    display: flex;
-    grid-column: 2/3;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
-}
+
 
 h3 {
     font-family: 'Caveat Brush', cursive;
