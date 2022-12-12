@@ -53,6 +53,8 @@ startButton.addEventListener("click", function(){
 	currentQuestion = 0;
 	document.getElementById("divQuestion").classList.remove("disappear");
 	document.getElementById("answerP").classList.remove("disappear");
+	document.getElementById("nextButton").classList.remove("disappear");
+	document.getElementById("soButton").classList.remove("disappear");
 	document.getElementById("startButton").classList.add("disappear");
 	questionDiv.textContent = questions[currentQuestion].question;
 	answerButton1.textContent = questions[currentQuestion].answerA;
@@ -63,35 +65,65 @@ startButton.addEventListener("click", function(){
 )
 
 answerButton1.addEventListener("click", function() {
-	counter = counter + 1;
-	document.getElementById("counter").innerHTML = counter;
-	document.getElementById("answersResult").innerHTML = " väärin.";
+	if (currentQuestion === 3){
+		counter = counter + 1;
+		rightAnswerCounter = rightAnswerCounter + 1;
+		document.getElementById("counter").innerHTML = counter;
+		document.getElementById("correct").innerHTML = rightAnswerCounter;
+		document.getElementById("answersResult").innerHTML = " oikein.";
+	} else {
+		counter = counter + 1;
+		document.getElementById("counter").innerHTML = counter;
+		document.getElementById("answersResult").innerHTML = " väärin.";
+	}
 	}
 )
 answerButton2.addEventListener("click", function() {
-	counter = counter + 1;
-	document.getElementById("counter").innerHTML = counter;
-	document.getElementById("answersResult").innerHTML = " väärin.";
+	if (currentQuestion === 1 || currentQuestion === 2) {
+		counter = counter + 1;
+		rightAnswerCounter = rightAnswerCounter + 1;
+		document.getElementById("counter").innerHTML = counter;
+		document.getElementById("correct").innerHTML = rightAnswerCounter;
+		document.getElementById("answersResult").innerHTML = " oikein.";
+	}
+	else {
+		counter = counter + 1;
+		document.getElementById("counter").innerHTML = counter;
+		document.getElementById("answersResult").innerHTML = " väärin.";
+	}
 	}
 )
 answerButton3.addEventListener("click", function() {
-	counter = counter + 1;
-	rightAnswerCounter = rightAnswerCounter + 1;
-	document.getElementById("counter").innerHTML = counter;
-	document.getElementById("correct").innerHTML = rightAnswerCounter;
-	document.getElementById("answersResult").innerHTML = " oikein.";
+	if (currentQuestion === 0) {
+		counter = counter + 1;
+		rightAnswerCounter = rightAnswerCounter + 1;
+		document.getElementById("counter").innerHTML = counter;
+		document.getElementById("correct").innerHTML = rightAnswerCounter;
+		document.getElementById("answersResult").innerHTML = " oikein.";
+	} else {
+		counter = counter + 1;
+		document.getElementById("counter").innerHTML = counter;
+		document.getElementById("answersResult").innerHTML = " väärin.";
+	}
 	}
 )
 answerButton4.addEventListener("click", function() {
-	counter = counter + 1;
-	document.getElementById("counter").innerHTML = counter;
-	document.getElementById("answersResult").innerHTML = " väärin.";
+	if (currentQuestion === 4) {
+		counter = counter + 1;
+		rightAnswerCounter = rightAnswerCounter + 1;
+		document.getElementById("counter").innerHTML = counter;
+		document.getElementById("correct").innerHTML = rightAnswerCounter;
+		document.getElementById("answersResult").innerHTML = " oikein.";
+	}
+	else {
+		counter = counter + 1;
+		document.getElementById("counter").innerHTML = counter;
+		document.getElementById("answersResult").innerHTML = " väärin.";
+	}
 	}
 )
 
-nextButton.addEventListener("click", nextQuestion());
-
-function nextQuestion() {
+nextButton.addEventListener("click", function(){
 	currentQuestion = currentQuestion + 1;
 	console.log(currentQuestion);
 	document.getElementById("answersResult").innerHTML = "";
@@ -100,15 +132,22 @@ function nextQuestion() {
 	answerButton2.textContent = questions[currentQuestion].answerB;
 	answerButton3.textContent = questions[currentQuestion].answerC;
 	answerButton4.textContent = questions[currentQuestion].answerD;
-}
+})
+
+/* function nextQuestion()  */
 
 soButton.addEventListener("click", function(){
-	currentQuestion === 0;
+	currentQuestion = 0;
 	document.getElementById("divQuestion").classList.add("disappear");
 	document.getElementById("startButton").classList.remove("disappear");
+	document.getElementById("nextButton").classList.add("disappear");
+	document.getElementById("soButton").classList.add("disappear");
+	document.getElementById("answerP").classList.add("disappear");
 	document.getElementById("answersResult").innerHTML = "";
-	counter === 0;
-	rightAnswerCounter === 0;
+	counter = 0;
+	rightAnswerCounter = 0;
+	document.getElementById("counter").innerHTML = "";
+	document.getElementById("correct").innerHTML = "";
 })
 
 /* document.getElementById("counter").innerHTML = counter;
