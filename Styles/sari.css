@@ -1,5 +1,6 @@
  body {
     background-color: #ffC25F;
+    font-size: 1.2em;
 }
 
 #content {
@@ -8,7 +9,6 @@
     grid-template-rows: 0.25fr 1fr;
     gap: 10px;
     font-family: 'livvic', sans-serif;
-    font-size: 1em;
     margin-bottom: 10px;
 }
 
@@ -49,11 +49,13 @@ padding: 5px;
 h2 {
     text-align: center;
     font-family: 'Caveat Brush', cursive;
+    font-size: 1.8em;
 }
 
 h3 {
     text-align: center;
     font-family: 'Caveat Brush', cursive;
+    font-size: 1.6em;
 }
 
 .side {
@@ -110,8 +112,8 @@ td {
 
 
 #navbar {
-    border: 5px solid #DA4F00;
-    background-color: #FF995F;
+    border: 5px solid #94600C;
+    background-color: #DA8700;
     font-weight: bold;
     }
 
@@ -123,7 +125,7 @@ td {
 
 
 #navbar a:hover {
-    color: #056888;
+    color: #943D0C;
 }
 .carousel .carousel-item {
     height: 120px;
@@ -158,8 +160,8 @@ h5 {
 
 #footer {
     display: flex;
-    background-color: #FF995F;
-    border: 5px solid #DA4F00;
+    background-color: #DA8700;
+    border: 5px solid #94600C;
     width: 100%;
     margin: 0;
     justify-content: space-between;
