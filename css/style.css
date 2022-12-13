@@ -5,7 +5,6 @@
 footer {
     background-color: #FF995F;
     border: 5px solid #DA4F00;
-    border-radius: 5px;
 
 }
 
@@ -16,4 +15,10 @@ footer {
 body {
     font-family: 'Caveat Brush', cursive;
     font-family: 'Livvic', sans-serif;
+}
+
+footer img {
+    max-height: 100px;
+    background-color: white;
+    border-radius: 2px;
 }
