@@ -318,6 +318,9 @@ nextButton.addEventListener("click", function(){
 	answerButton2.disabled = false;
 	answerButton3.disabled = false;
 	answerButton4.disabled = false;
+	if (currentQuestion === 4) {
+		document.getElementById("nextButton").classList.add("disappear");
+	}
 	}
 )
 /* Function with eventlistener for star over button. */
