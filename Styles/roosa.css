@@ -171,3 +171,169 @@ input {
     
 }
 /* QUIZ CSS  */
+/* Yhteinen tyylitiedosta alkaa */
+
+
+body {
+    margin: 0;
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.2em;
+    height: 98vh;
+}
+
+#navbar {
+    border: 5px solid #DA4F00;
+    background-color: #FF995F;
+    font-weight: bold;
+    }
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+
+
+#navbar a:hover {
+    color: #056888;
+}
+.carousel .carousel-item {
+    height: 120px;
+    
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      min-height: 120px;
+  }
+  .carousel-caption{
+    
+    color: black;
+    background-color: white;
+    position: absolute;
+    right: 30%;
+    top: 0.25rem;
+    bottom: 0.25rem;
+    left: 30%;
+    padding-top: 0.1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+
+
+h5 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 2em;
+}
+
+p, a, footer{
+    font-family: 'Livvic', sans-serif;
+    font-size: 1.1em;
+}
+
+.nav-item {
+    padding:5px;
+}
+
+#footer {
+    display: flex;
+    background-color: #FF995F;
+    border: 5px solid #DA4F00;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+
+}
+
+.team {
+    display: flex;
+    color: black;
+    align-items: flex-end;
+}
+
+li.footer-item {
+    padding:3px;
+}
+
+footer img {
+    max-height: 100px;
+    background-color: white;
+}
+
+
+/* first content index */
+
+.firstPage{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    border: 5px solid #DA4F00;
+    height: 60%;
+    padding: 10px;
+}
+
+.col-2 {
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+ 
+.col-10 {
+    display: flex;
+    grid-column: 2/3;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+h3 {
+    font-family: 'Caveat Brush', cursive;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+
+
+
+@media screen and (max-width: 991px){
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    } 
+
+footer img{
+    display: none;
+}
+
+#carouselCaptions {
+    display: none;
+}
+    
+
+    .col-2{
+        display: none;
+    }
+    .col-10{
+        grid-column: 1/3;
+    
+    }
+.firstPage{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    border: 5px solid #DA4F00;
+    height: 90%;
+    padding: 10px;
+}
+}
+
