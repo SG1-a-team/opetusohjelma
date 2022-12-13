@@ -96,7 +96,7 @@ footer img {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
-    gap: 2px;
+    gap: 0px;
     font-family: 'livvic', sans-serif;
     font-size: 1em;
 }
