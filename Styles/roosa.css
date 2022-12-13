@@ -52,7 +52,7 @@ p, a, footer{
 }
 
 footer {
-    background-color: #BB9DEA;
+    background-color: 8459C5;
     border: 5px solid #9E78D9;
     width: 100%;
     margin: 0;   
@@ -89,29 +89,26 @@ footer img{
 }
     }
 
-/* QUIZ CSS */   
+/* QUIZ CSS */ 
+
 body{
   font-size: 20px;
   font-family: sans-serif;
   color: rgb(0, 0, 0);
-  background-image: url(/images/seina.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  
+  background-color: #ffd7c0;
 
 }
 
 #results {
 width: 100px;
-color: #592C9D;
-background-color: #FFF281;
+background-color: #ffc25f;
 float: right;
 margin: 0px 15px 15px 0px;
 }
 
 .question{
   font-weight: 600;
-  background-color: #FFF281;
+  background-color: #ffc25f;
   width: 250px;
   justify-content: center;
   
@@ -121,45 +118,54 @@ margin: 0px 15px 15px 0px;
     
     
 }
-#submit, #restart{
+#submit{
   font-family: sans-serif;
   font-size: 20px;
-  background-color: #9E78D9;
+  background-color: #056888;
   color: rgb(235, 222, 222);
   border: 0px;
   border-radius: 3px;
   padding: 20px;
   cursor: pointer;
   margin-bottom: 20px;
-  margin-left: 5px;
-
+  margin-left: 30px;
   
 }
+
 #submit:hover, #restart:hover{
-  background-color: #BB9DEA;
+  background-color: #499db9;
 }
 
+#palaute{
+    background-color: #ffc25f;
+    border-radius: 5px;
+    
+    
 
+}
 
 #quiz {
-    border: 5px solid rgb(228, 199, 199);
+
     width: 50%;
+    padding-left: 30px;
     
 }
 
-h2{ 
+h2{
+    background-color: #ffc25f;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    
+}
+
+h2, .question, #results, #palaute {
+    text-align: center;
+    border-radius: 5px;
     margin-top: 10px;
 }
 
-h2, .question, #results {
-    text-align: center;
-    border-radius: 5px;
-
-}
-
 label {
-    margin-right: 10px;
-    background-color: rgba(255, 255, 255, 0.275) ;
+    margin-right: px;
     border-radius: 5px;
 }
 
@@ -167,12 +173,20 @@ input {
     margin-right: 2px;
 }
 
-.inside-html{
-    
+#Pekko{ 
+    position: absolute;
+    top: 300px;
+    left: 450px;
+    height: 400px;
+
+}
+
+div>p{
+    display: block;
 }
 /* QUIZ CSS  */
-/* Yhteinen tyylitiedosta alkaa */
 
+/* Yhteinen tyylitiedosta alkaa */
 
 body {
     margin: 0;
@@ -182,8 +196,8 @@ body {
 }
 
 #navbar {
-    border: 5px solid #DA4F00;
-    background-color: #FF995F;
+    border: 5px solid #0b485d;
+    background-color: #056888;
     font-weight: bold;
     }
 
@@ -195,7 +209,7 @@ body {
 
 
 #navbar a:hover {
-    color: #056888;
+    color: #ffc25f;
 }
 .carousel .carousel-item {
     height: 120px;
@@ -241,8 +255,8 @@ p, a, footer{
 
 #footer {
     display: flex;
-    background-color: #FF995F;
-    border: 5px solid #DA4F00;
+    background-color: #056888;
+    border: 5px solid #0b485d;
     width: 100%;
     margin: 0;
     justify-content: space-between;
@@ -335,5 +349,15 @@ footer img{
     height: 90%;
     padding: 10px;
 }
+
+.inside-html>img{
+    display: none;
+}
+
+#Pekko, div>p { 
+    display: none;
+
+}
+
 }
 
