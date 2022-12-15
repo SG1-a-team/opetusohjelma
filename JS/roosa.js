@@ -133,6 +133,26 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
     // show number of correct answers out of total
     resultsContainer.innerHTML = numCorrect + ' oikein ' + questions.length;
     
+    // vastauksia pisteiden perusteella
+    if(numCorrect == 5){
+        document.getElementById('palaute').innerHTML = 'Pekko on erittäin tyytyväinen, sait täydet pisteet!';
+      }
+      else if(numCorrect == 4){
+        document.getElementById('palaute').innerHTML = 'Pekko melko tyytyväinen, sait melkein kaikki oikein!';
+      }
+      else if(numCorrect == 3){
+        document.getElementById('palaute').innerHTML = 'Pekko on tyytyväinen, mutta vielä voisi mennä paremmin!';
+      }
+      else if(numCorrect == 2){
+        document.getElementById('palaute').innerHTML = 'Pekko käskee harjoitella lisää, ja sitten vastaamaan uudestaan!';
+      }
+      else if(numCorrect == 1){
+        document.getElementById('palaute').innerHTML = 'Pekko ei ole tyytyväinen, koita uudelleen!';
+      }
+      else {
+        document.getElementById('palaute').innerHTML = 'Pekko huomaa että et ole vastannut mihinkään oikein :(';
+      }
+     
   }
 
   // show questions right away
@@ -141,12 +161,6 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
   // on submit, show results
   submitButton.onclick = function(){
     showResults(questions, quizContainer, resultsContainer);
-  }
-
-  function Clear()
-  {
-      clearContentButton
-
   }
   
 }
