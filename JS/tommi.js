@@ -27,10 +27,10 @@ function firstQuestion(){
     if(valinta.checked == true){
         scoreboard = scoreboard + 1
         document.getElementById("score1").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
-        document.getElementById("tulos1").innerHTML = "Vastauksesi on oikein"
+        document.getElementById("tulos1").innerHTML = "Vastauksesi on oikein " + "<p>&#9989</p>"
        
     }else {
-       document.getElementById("tulos1").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Helsinki"
+       document.getElementById("tulos1").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Helsinki" + "<p>&#129510;</p>"
        document.getElementById("score1").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }     
     button1.disabled = true;
@@ -48,10 +48,10 @@ function secondQuestion(){
     if(valinta.checked == true){
         scoreboard = scoreboard + 1
         document.getElementById("score2").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
-        document.getElementById("tulos2").innerHTML = "Vastauksesi on oikein"
+        document.getElementById("tulos2").innerHTML = "Vastauksesi on oikein " + "<p>&#9989</p>"
        
     }else {
-       document.getElementById("tulos2").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Tanska"
+       document.getElementById("tulos2").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Tanska" + "<p>&#129510;</p>"
        document.getElementById("score2").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }
     button2.disabled = true;
@@ -69,10 +69,10 @@ function thirdQuestion(){
     if(valinta.checked == true){
         scoreboard = scoreboard + 1
         document.getElementById("score3").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
-        document.getElementById("tulos3").innerHTML = "Vastauksesi on oikein"
+        document.getElementById("tulos3").innerHTML = "Vastauksesi on oikein " + "<p>&#9989</p>"
        
     }else {
-       document.getElementById("tulos3").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Pariisi"
+       document.getElementById("tulos3").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Pariisi" + "<p>&#129510;</p>"
        document.getElementById("score3").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }    
     button3.disabled = true;
@@ -90,10 +90,10 @@ function fourthQuestion(){
     if(valinta.checked == true){
         scoreboard = scoreboard + 1
         document.getElementById("score4").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
-        document.getElementById("tulos4").innerHTML = "Vastauksesi on oikein"
+        document.getElementById("tulos4").innerHTML = "Vastauksesi on oikein " + "<p>&#9989</p>"
        
     }else {
-       document.getElementById("tulos4").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Mount Everest"
+       document.getElementById("tulos4").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Mount Everest" + "<p>&#129510;</p>"
        document.getElementById("score4").innerHTML = "Tuloksesi on: " + scoreboard +  "/" + "5"
     }  
     button4.disabled = true;
@@ -112,10 +112,10 @@ function fifthQuestion(){
     if(valinta.checked == true){
         scoreboard = scoreboard + 1;
         document.getElementById("score5").innerHTML = "Lopullinen tuloksesi on: " + scoreboard +  "/" + "5"
-        document.getElementById("tulos5").innerHTML = "Vastauksesi on oikein";
+        document.getElementById("tulos5").innerHTML = "Vastauksesi on oikein " + "<p>&#9989</p>"
        
     }else {
-       document.getElementById("tulos5").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Ruotsi"
+       document.getElementById("tulos5").innerHTML = "Nyt meni väärin, oikea vastaus olisi ollut Ruotsi" + "<p>&#129510;</p>"
        document.getElementById("score5").innerHTML = "Lopullinen tuloksesi on: " + scoreboard +  "/" + "5"
     }    
     button5.disabled = true;
