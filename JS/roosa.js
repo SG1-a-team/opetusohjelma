@@ -27,23 +27,23 @@ let myQuestions = [
     correctAnswer: 'c'
   },
   {
-    question: "Paljon on ?",
+    question: "Jos Pekko saa lahjaksi 8 luuta ja syö niistä 3, kuinka monta luuta jää jäljelle?",
     answers: {
-      a: '',
-      b: '',
-      c: ''
+      a: '11',
+      b: '5',
+      c: '3'
     },
-    correctAnswer: 'c'
+    correctAnswer: 'b'
   }
   ,
   {
-    question: "Kuinka paljon on ?",
+    question: "Entäpä kun Pekolla on yksi 20kg ruokasäkki. Paljonko ruokaa on 10 säkissä?",
     answers: {
-      a: '',
-      b: '',
-      c: ''
+      a: '200',
+      b: '120',
+      c: '150'
     },
-    correctAnswer: 'c'
+    correctAnswer: 'a'
   }
 ];
 
@@ -141,7 +141,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         document.getElementById('palaute').innerHTML = 'Pekko melko tyytyväinen, sait melkein kaikki oikein!';
       }
       else if(numCorrect == 3){
-        document.getElementById('palaute').innerHTML = 'Pekko on tyytyväinen, mutta vielä voisi mennä paremmin!';
+        document.getElementById('palaute').innerHTML = 'Pekko on tyytyväinen, mutta vielä voisi mennä paremmin.';
       }
       else if(numCorrect == 2){
         document.getElementById('palaute').innerHTML = 'Pekko käskee harjoitella lisää, ja sitten vastaamaan uudestaan!';
@@ -150,7 +150,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         document.getElementById('palaute').innerHTML = 'Pekko ei ole tyytyväinen, koita uudelleen!';
       }
       else {
-        document.getElementById('palaute').innerHTML = 'Pekko huomaa että et ole vastannut mihinkään oikein :(';
+        document.getElementById('palaute').innerHTML = 'Pekko huomaa että et ole vastannut mihinkään oikein.';
       }
      
   }
