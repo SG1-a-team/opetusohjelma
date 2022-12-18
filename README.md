@@ -3,11 +3,11 @@ Schoolproject for OAMK's web-project course. Aim was to build a website with ind
 and as many quiz pages as there are group members. In our case, it means five different quiz pages. Quiz pages 
 are created by following group members: <br>
 
-Animal quiz - Teemu <br>
-Geography quiz - Tommi <br>
-English quiz - Sari <br>
-Science quiz - Timo <br>
-Mathematics quiz - Roosa <br>
+Animal quiz - Teemu Eskola <br>
+Geography quiz - Tommi Järvenpää<br>
+English quiz - Sari Suomela<br>
+Science quiz - Timo Hyttinen<br>
+Mathematics quiz - Roosa Rautio<br>
 
 Project started on 16th November 2022 and lasted for about a month. Project was implemented by agile methods.<br>
 
