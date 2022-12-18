@@ -1,6 +1,6 @@
 let scoreboard = 0;
 
-let button0 = document.querySelector(".aloita_peli");
+let button0 = document.getElementById("aloita_peli");
 let button1 = document.getElementById("kysymys1");
 let button2 = document.getElementById("kysymys2");
 let button3 = document.getElementById("kysymys3");
@@ -16,8 +16,9 @@ button5.addEventListener("click", fifthQuestion)
 
 //Start game and hide class ".side"
 function startGame(){
-    document.querySelector(".quiz1").classList.remove("piilotettu");
     document.querySelector(".side").classList.add("piilotettu");
+    document.querySelector(".quiz1").classList.remove("piilotettu");
+
     
 }
 

@@ -187,7 +187,7 @@ h2 {
 }
 
 
-.seuraava1, .seuraava2, .seuraava3, .seuraava4, .aloita_peli{
+.seuraava1, .seuraava2, .seuraava3, .seuraava4, #aloita_peli{
     display: inline-block;
 }
 .piilotettu{
