@@ -98,8 +98,8 @@ footer img {
     grid-template-rows: 1fr;
     width: 100%;
     border: 5px solid #DA4F00;
-    height: 60%;
     padding: 10px;
+    min-height: 410px;
 }
 
 .col-2 {
@@ -157,7 +157,6 @@ footer img{
     grid-template-rows: 1fr;
     width: 100%;
     border: 5px solid #DA4F00;
-    height: 90%;
     padding: 10px;
 }
 }
