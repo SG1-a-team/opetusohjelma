@@ -1,5 +1,5 @@
 # opetusohjelma
-Schoolproject for OAMK's course web-project. Aim was to build a website with index -page, information -page 
+Schoolproject for OAMK's web-project course. Aim was to build a website with index -page, information -page 
 and as many quiz pages as there are group members. In our case, it means five different quiz pages. Quiz pages 
 are created by following group members: <br>
 
