@@ -16,6 +16,6 @@ Project started on 16th November 2022 and lasted for about a month. Project was 
 2nd sprint: tue 12.11. - sun 11.12.<br>
 3rd sprint: mon 12.12 - tue 20.12.<br>
 
-You can download this repository and should have a functional quiz -website for primary schoolers. Enjoy!
-You can also access the sita via this url:
+You can download this repository and should have a functional quiz -website for primary schoolers. Enjoy!<br>
+You can also access the site via this url:
 https://www.students.oamk.fi/~n2este00/opetusohjelma/
